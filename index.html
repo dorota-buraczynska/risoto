@@ -27,13 +27,26 @@
 
 <div class="slider">
     <div class="slider__bg"></div>
-    <video class="slider__video slide" loop autoplay>
+    <video class="slider__item slider__item--active" loop autoplay>
         <source src="https://daks2k3a4ib2z.cloudfront.net/57ea3312eaa002fa3bee3f81/57ea3ce106f8c9724dc2cb93_video-food%20(online-video-cuttercom)-transcode.webm">
     </video>
-    <img class="slider__img slide"
-         src="http://uploads.webflow.com/57ea3312eaa002fa3bee3f81/57ed268aaf9d15040c52dbbc_slide-2.jpg" alt="breakfast">
-    <img class="slider__img slide"
-         src="http://uploads.webflow.com/57ea3312eaa002fa3bee3f81/57ed2727cb65fa8c183d9429_slide-3.jpg" alt="nuts">
+    <div class="slider__item slider__item--image"
+         style="background-image: url('http://uploads.webflow.com/57ea3312eaa002fa3bee3f81/57ed268aaf9d15040c52dbbc_slide-2.jpg')"></div>
+    <div class="slider__item slider__item--image"
+         style="background-image: url('http://uploads.webflow.com/57ea3312eaa002fa3bee3f81/57ed2727cb65fa8c183d9429_slide-3.jpg')"></div>
+
+    <button class="slider__button slider__button--left"><i class="fa fa-angle-left" aria-hidden="true"></i></button>
+    <button class="slider__button slider__button--right"><i class="fa fa-angle-right" aria-hidden="true"></i></button>
+
+    <div class="slider__title">
+        <img class="slider__title-image"
+             src="http://uploads.webflow.com/57ea3312eaa002fa3bee3f81/57ed2bd081729e34014299af_cook.png" alt="logo">
+        <h2 class="slider__title-heading">
+            welcome to<br>
+            risoto restaurant
+        </h2>
+        <button class="slider__title-button">book a table now</button>
+    </div>
 </div>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <script src="script.js"></script>

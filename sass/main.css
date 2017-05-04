@@ -15,12 +15,12 @@ body {
     background-color: white;
     width: 100%;
     height: 100%;
-    z-index: 2; }
+    z-index: 5; }
   .nav__title {
     width: 170px;
     padding: 20px 20px 0;
     position: relative;
-    z-index: 3; }
+    z-index: 6; }
   .nav__button {
     float: right;
     background: none;
@@ -31,7 +31,7 @@ body {
     cursor: pointer;
     outline: none;
     position: relative;
-    z-index: 3; }
+    z-index: 6; }
     .nav__button i {
       padding: 20px 10px; }
     .nav__button--active {
@@ -45,7 +45,7 @@ body {
     position: absolute;
     left: 0;
     width: 100%;
-    z-index: 1;
+    z-index: 4;
     transform: translateY(-100%);
     transition: transform 1s; }
   .nav__menu-item {
@@ -74,18 +74,90 @@ body {
   max-width: 800px;
   margin: auto; }
 
+.container-small {
+  max-width: 400px;
+  margin: auto; }
+
 .slider {
-  position: relative; }
-  .slider__video {
-    width: 100%;
-    position: absolute; }
+  position: relative;
+  height: 560px;
+  overflow: hidden; }
+  .slider__item {
+    opacity: 0;
+    position: absolute;
+    height: 100%;
+    min-width: 100%;
+    overflow: hidden;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%); }
+    .slider__item--image {
+      background-size: cover;
+      background-position: 50%; }
+    .slider__item--active {
+      opacity: 1; }
+  .slider__button {
+    outline: none;
+    border: none;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background-color: rgba(0, 0, 0, 0.66);
+    position: absolute;
+    left: 0;
+    top: 40%;
+    transform: translateY(-50%);
+    z-index: 3;
+    margin: 0 20px;
+    color: white;
+    cursor: pointer; }
+    .slider__button i {
+      font-size: 40px;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%); }
+    .slider__button:hover {
+      background-color: #9061C2;
+      transition: 1s; }
+    .slider__button--right {
+      left: auto;
+      right: 0; }
   .slider__bg {
     background-image: url("http://uploads.webflow.com/57ea3312eaa002fa3bee3f81/57ea528dfbbf45e84764f665_backg-2.png");
     width: 100%;
     position: absolute;
-    height: 100%; }
-  .slider__img {
-    width: 100%;
-    position: absolute; }
+    left: 0;
+    top: 0;
+    height: 100%;
+    z-index: 1; }
+  .slider__title {
+    position: absolute;
+    z-index: 2;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    width: 90%; }
+  .slider__title-heading {
+    font-family: "Playball", cursive;
+    font-size: 50px;
+    font-weight: 500;
+    color: white;
+    text-transform: capitalize;
+    text-align: center;
+    margin-top: 10px; }
+  .slider__title-button {
+    text-transform: uppercase;
+    color: white;
+    background-color: #9061C2;
+    border: none;
+    outline: none;
+    font-family: "Poppins", sans-serif;
+    font-size: 12px;
+    font-weight: 600;
+    padding: 20px;
+    border-radius: 10px;
+    letter-spacing: 0.1rem; }
 
 /*# sourceMappingURL=main.css.map */
