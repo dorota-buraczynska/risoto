@@ -1,0 +1,97 @@
+.nav {
+  padding-bottom: $common-padding;
+  position: relative;
+
+  &:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: white;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+  }
+
+  &__container {
+    @extend .container;
+  }
+
+  &__title {
+    width: 170px;
+    padding: $common-padding $common-padding 0;
+    position: relative;
+    z-index: 3;
+  }
+
+  &__button {
+    float: right;
+    background: none;
+    border: none;
+    font-size: 18px;
+    margin-top: $common-padding;
+    margin-right: $common-padding;
+    cursor: pointer;
+    outline: none;
+    position: relative;
+    z-index: 3;
+
+    i {
+      padding: $common-padding $common-padding/2;
+    }
+
+    &--active {
+      color: white;
+      background-color: $main-color;
+    }
+  }
+
+  &__menu-list {
+    list-style-type: none;
+    background-color: #FAFAFA;
+    padding: 0;
+    margin-top: $common-padding;
+    position: absolute;
+    left: 0;
+    width: 100%;
+    z-index: 1;
+    transform: translateY(-100%);
+    transition: transform 1s;
+  }
+
+  &__menu-item {
+    @extend .container;
+    padding: $common-padding;
+    color: white;
+    cursor: pointer;
+
+    &--active {
+      background-color: $main-color;
+
+      &:hover .nav__menu-link,
+      .nav__menu-link {
+        color: white;
+      }
+    }
+
+    &:hover a {
+      color: $header-color;
+    }
+  }
+
+  &__menu-link {
+    text-decoration: none;
+    color: $text-color;
+    text-transform: capitalize;
+    font: {
+      family: $header-font-family;
+      size: 14px;
+      weight: 600;
+    }
+  }
+}
+
+
+.visible {
+  transform: translateY(0);
+}
