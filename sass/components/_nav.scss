@@ -3,6 +3,7 @@
   position: relative;
 
   &:after {
+    @include z-index(header);
     content: "";
     position: absolute;
     top: 0;
@@ -10,7 +11,6 @@
     background-color: white;
     width: 100%;
     height: 100%;
-    z-index: 5;
   }
 
   &__container {
@@ -18,13 +18,14 @@
   }
 
   &__title {
+    @include z-index(header-items);
     width: 170px;
     padding: $common-padding $common-padding 0;
     position: relative;
-    z-index: 6;
   }
 
   &__button {
+    @include z-index(header-items);
     float: right;
     background: none;
     border: none;
@@ -34,7 +35,6 @@
     cursor: pointer;
     outline: none;
     position: relative;
-    z-index: 6;
 
     i {
       padding: $common-padding $common-padding/2;
@@ -47,6 +47,7 @@
   }
 
   &__menu-list {
+    @include z-index(menu);
     list-style-type: none;
     background-color: #FAFAFA;
     padding: 0;
@@ -54,7 +55,6 @@
     position: absolute;
     left: 0;
     width: 100%;
-    z-index: 4;
     transform: translateY(-100%);
     transition: transform 1s;
   }

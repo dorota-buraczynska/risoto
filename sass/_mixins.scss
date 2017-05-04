@@ -1,0 +1,4 @@
+@mixin z-index($layer) {
+  $layers: (base, overlay, slider-title, slider-nav, menu, header, header-items);
+  z-index: index($layers, $layer);
+}

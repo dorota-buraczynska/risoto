@@ -8,20 +8,21 @@ body {
   padding-bottom: 20px;
   position: relative; }
   .nav:after {
+    z-index: 6;
     content: "";
     position: absolute;
     top: 0;
     left: 0;
     background-color: white;
     width: 100%;
-    height: 100%;
-    z-index: 5; }
+    height: 100%; }
   .nav__title {
+    z-index: 7;
     width: 170px;
     padding: 20px 20px 0;
-    position: relative;
-    z-index: 6; }
+    position: relative; }
   .nav__button {
+    z-index: 7;
     float: right;
     background: none;
     border: none;
@@ -30,14 +31,14 @@ body {
     margin-right: 20px;
     cursor: pointer;
     outline: none;
-    position: relative;
-    z-index: 6; }
+    position: relative; }
     .nav__button i {
       padding: 20px 10px; }
     .nav__button--active {
       color: white;
       background-color: #9061C2; }
   .nav__menu-list {
+    z-index: 5;
     list-style-type: none;
     background-color: #FAFAFA;
     padding: 0;
@@ -45,7 +46,6 @@ body {
     position: absolute;
     left: 0;
     width: 100%;
-    z-index: 4;
     transform: translateY(-100%);
     transition: transform 1s; }
   .nav__menu-item {
@@ -97,6 +97,7 @@ body {
     .slider__item--active {
       opacity: 1; }
   .slider__button {
+    z-index: 4;
     outline: none;
     border: none;
     width: 70px;
@@ -107,7 +108,6 @@ body {
     left: 0;
     top: 40%;
     transform: translateY(-50%);
-    z-index: 3;
     margin: 0 20px;
     color: white;
     cursor: pointer; }
@@ -124,21 +124,23 @@ body {
       left: auto;
       right: 0; }
   .slider__bg {
+    z-index: 2;
     background-image: url("http://uploads.webflow.com/57ea3312eaa002fa3bee3f81/57ea528dfbbf45e84764f665_backg-2.png");
     width: 100%;
     position: absolute;
     left: 0;
     top: 0;
-    height: 100%;
-    z-index: 1; }
+    height: 100%; }
   .slider__title {
+    z-index: 3;
     position: absolute;
-    z-index: 2;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
     width: 90%; }
+  .slider__title-image {
+    max-width: 100%; }
   .slider__title-heading {
     font-family: "Playball", cursive;
     font-size: 50px;
