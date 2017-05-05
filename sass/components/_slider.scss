@@ -92,6 +92,9 @@
     text-transform: capitalize;
     text-align: center;
     margin-top: $common-padding/2;
+    @media screen and (min-width: 768px){
+      font-size: 80px;
+    }
   }
 
   &__title-button {
@@ -103,7 +106,7 @@
     font: {
       family: $header-font-family;
       size: 12px;
-      weight: 600;
+      weight: 500;
     }
     padding: $common-padding;
     border-radius: $common-padding/2;
