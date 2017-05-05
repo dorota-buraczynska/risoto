@@ -1,0 +1,24 @@
+.info {
+  margin: $common-padding*7 $common-padding*2;
+
+  &__image {
+    width: 100px;
+  }
+
+  &__heading {
+    font: {
+      family: $header-font-family;
+      weight: 500;
+      size: 20px;
+    }
+    text-transform: capitalize;
+  }
+
+  &__text {
+    font: {
+      family: $body-font-family;
+      size: 15px;
+    }
+    color: $text-color;
+  }
+}
