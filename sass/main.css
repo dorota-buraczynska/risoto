@@ -319,5 +319,9 @@ body {
     color: #b4b4b4;
     text-transform: capitalize;
     margin: 20px; }
+    .menu-section__name--active {
+      color: #9061C2; }
+    .menu-section__name:hover {
+      color: #9061C2; }
 
 /*# sourceMappingURL=main.css.map */

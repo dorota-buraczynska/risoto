@@ -20,5 +20,13 @@
     color: $text-color;
     text-transform: capitalize;
     margin: $common-padding;
+
+    &--active {
+      color: $main-color;
+    }
+
+    &:hover {
+      color: $main-color;
+    }
   }
 }

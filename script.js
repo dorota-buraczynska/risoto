@@ -47,3 +47,28 @@ $('.slider__button--right').on('click', function () {
 
     slide.eq(nextPhotoIndex - 1).addClass(activeClass);
 });
+
+//restaurant-menu
+$('.menu-section').on('click', function () {
+    var menuNavSection = $(this).attr('data-menu-nav-section');
+    var activeClass = 'menu-proposition--active';
+    var sectionActiveClass = 'menu-section__name--active';
+    var starters = $('.menu-proposition[data-menu-section="starters"]');
+    var dishes = $('.menu-proposition[data-menu-section="dishes"]');
+    var deserts = $('.menu-proposition[data-menu-section="deserts"]');
+    var drinks = $('.menu-proposition[data-menu-section="drinks"]');
+
+    $('.restaurant-menu__proposition').removeClass(activeClass);
+    $('.menu-section__name').removeClass(sectionActiveClass);
+    $(this).find('.menu-section__name').addClass(sectionActiveClass);
+
+    if (menuNavSection === 'starters') {
+        starters.addClass(activeClass);
+    } else if (menuNavSection === 'dishes') {
+        dishes.addClass(activeClass);
+    } else if (menuNavSection === 'deserts') {
+        deserts.addClass(activeClass);
+    } else {
+        drinks.addClass(activeClass);
+    }
+});
