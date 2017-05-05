@@ -1,15 +1,33 @@
 .menu-section {
   cursor: pointer;
   padding: $common-padding/2;
+  width: 200px;
+  margin: auto;
+
+  &:hover .menu-section__img {
+    filter: grayscale(0);
+    opacity: 1;
+  }
+
+  &:hover .menu-section__name {
+    color: $main-color;
+  }
 
   &__img {
     width: 50px;
     display: inline-block;
     color: $text-color;
     margin: $common-padding/2;
+    filter: grayscale(1);
+    opacity: 0.5;
+
+    &--active {
+      filter: grayscale(0);
+      opacity: 1;
+    }
   }
 
-  &__name{
+  &__name {
     display: inline-block;
     vertical-align: top;
     font: {
@@ -22,10 +40,6 @@
     margin: $common-padding;
 
     &--active {
-      color: $main-color;
-    }
-
-    &:hover {
       color: $main-color;
     }
   }

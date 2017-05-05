@@ -52,15 +52,18 @@ $('.slider__button--right').on('click', function () {
 $('.menu-section').on('click', function () {
     var menuNavSection = $(this).attr('data-menu-nav-section');
     var activeClass = 'menu-proposition--active';
-    var sectionActiveClass = 'menu-section__name--active';
+    var nameActiveClass = 'menu-section__name--active';
+    var imgActiveClass = 'menu-section__img--active';
     var starters = $('.menu-proposition[data-menu-section="starters"]');
     var dishes = $('.menu-proposition[data-menu-section="dishes"]');
     var deserts = $('.menu-proposition[data-menu-section="deserts"]');
     var drinks = $('.menu-proposition[data-menu-section="drinks"]');
 
     $('.restaurant-menu__proposition').removeClass(activeClass);
-    $('.menu-section__name').removeClass(sectionActiveClass);
-    $(this).find('.menu-section__name').addClass(sectionActiveClass);
+    $('.menu-section__name').removeClass(nameActiveClass);
+    $('.menu-section__img').removeClass(imgActiveClass);
+    $(this).find('.menu-section__name').addClass(nameActiveClass);
+    $(this).find('.menu-section__img').addClass(imgActiveClass);
 
     if (menuNavSection === 'starters') {
         starters.addClass(activeClass);

@@ -254,10 +254,10 @@ body {
     outline: none;
     margin-top: 10px;
     margin-bottom: 80px;
-    cursor: pointer; }
+    cursor: pointer;
+    transition: 0.5s; }
     .restaurant-menu__button:hover {
-      background-color: #121212;
-      transition: 0.5s; }
+      background-color: #121212; }
 
 .menu-proposition {
   position: absolute;
@@ -304,12 +304,24 @@ body {
 
 .menu-section {
   cursor: pointer;
-  padding: 10px; }
+  padding: 10px;
+  width: 200px;
+  margin: auto; }
+  .menu-section:hover .menu-section__img {
+    filter: grayscale(0);
+    opacity: 1; }
+  .menu-section:hover .menu-section__name {
+    color: #9061C2; }
   .menu-section__img {
     width: 50px;
     display: inline-block;
     color: #b4b4b4;
-    margin: 10px; }
+    margin: 10px;
+    filter: grayscale(1);
+    opacity: 0.5; }
+    .menu-section__img--active {
+      filter: grayscale(0);
+      opacity: 1; }
   .menu-section__name {
     display: inline-block;
     vertical-align: top;
@@ -321,7 +333,63 @@ body {
     margin: 20px; }
     .menu-section__name--active {
       color: #9061C2; }
-    .menu-section__name:hover {
-      color: #9061C2; }
+
+.opening-hours {
+  background-color: #9061C2;
+  text-align: center;
+  position: relative; }
+  .opening-hours:before {
+    content: "";
+    border: 1px solid white;
+    position: absolute;
+    width: 90%;
+    height: 90%;
+    top: 5%;
+    left: 5%;
+    opacity: 0.5; }
+  .opening-hours__title {
+    font-family: "Poppins", sans-serif;
+    font-size: 30px;
+    font-weight: 500;
+    color: white;
+    text-transform: uppercase;
+    padding-top: 140px;
+    margin: 0; }
+  .opening-hours__list {
+    list-style-type: none;
+    padding: 0; }
+  .opening-hours__list-item {
+    text-decoration: none;
+    color: white;
+    text-transform: capitalize;
+    padding: 10px;
+    font-family: "Playfair Display", serif;
+    font-size: 15px;
+    font-style: italic;
+    font-weight: normal; }
+    .opening-hours__list-item strong {
+      font-style: normal;
+      font-weight: normal; }
+      .opening-hours__list-item strong:before {
+        content: "..............."; }
+  .opening-hours__button {
+    background-color: white;
+    border: none;
+    outline: none;
+    color: #9061C2;
+    padding: 20px;
+    margin-top: 20px;
+    margin-bottom: 140px;
+    text-transform: uppercase;
+    border-radius: 10px;
+    letter-spacing: 0.1em;
+    position: relative;
+    transition: 0.5s;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-size: 12px; }
+    .opening-hours__button:hover {
+      background-color: #121212;
+      color: white; }
 
 /*# sourceMappingURL=main.css.map */

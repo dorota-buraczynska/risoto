@@ -49,10 +49,10 @@
     margin-top: $common-padding/2;
     margin-bottom: $common-padding*4;
     cursor: pointer;
+    transition: 0.5s;
 
     &:hover {
       background-color: $header-color;
-      transition: 0.5s;
     }
   }
 }

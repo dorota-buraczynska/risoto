@@ -1,0 +1,80 @@
+.opening-hours {
+  background-color: $main-color;
+  text-align: center;
+  position: relative;
+
+  &:before{
+    content: "";
+    border: 1px solid white;
+    position: absolute;
+    width: 90%;
+    height: 90%;
+    top: 5%;
+    left: 5%;
+    opacity: 0.5;
+  }
+
+  &__title {
+    font: {
+      family: $header-font-family;
+      size: 30px;
+      weight: 500;
+    }
+    color: white;
+    text-transform: uppercase;
+    padding-top: $common-padding*7;
+    margin: 0;
+  }
+
+  &__list {
+    list-style-type: none;
+    padding: 0;
+  }
+
+  &__list-item {
+    text-decoration: none;
+    color: white;
+    text-transform: capitalize;
+    padding: $common-padding/2;
+    font: {
+      family: $body-font-family;
+      size: 15px;
+      style: italic;
+      weight: normal;
+    }
+
+    & strong {
+      font-style: normal;
+      font-weight: normal;
+
+      &:before {
+        content: "...............";
+      }
+    }
+  }
+
+  &__button {
+    background-color: white;
+    border: none;
+    outline: none;
+    color: $main-color;
+    padding: $common-padding;
+    margin-top: $common-padding;
+    margin-bottom: $common-padding*7;
+    text-transform: uppercase;
+    border-radius: $common-padding/2;
+    letter-spacing: 0.1em;
+    position: relative;
+    transition: 0.5s;
+    font: {
+      family: $header-font-family;
+      weight: 500;
+      size: 12px;
+    }
+
+    &:hover {
+      background-color: $header-color;
+      color: white;
+    }
+  }
+}
