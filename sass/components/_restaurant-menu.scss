@@ -1,0 +1,58 @@
+.restaurant-menu {
+  text-align: center;
+  background-color: $section-bg-color;
+
+  &__header {
+    font: {
+      family: $paragraph-font-family;
+      size: 32px;
+    }
+    color: $main-color;
+    padding-top: $common-padding*3;
+    margin: 0;
+  }
+
+  &__title {
+    font: {
+      family: $header-font-family;
+      weight: 500;
+      size: 40px;
+    }
+    color: $header-color;
+    margin-top: 0;
+    margin-bottom: $common-padding*2;
+
+    &:first-letter {
+      text-transform: uppercase;
+    }
+  }
+
+  &__contents {
+    width: 100%;
+    height: 700px;
+  }
+
+  &__button {
+    font: {
+      family: $header-font-family;
+      weight: 500;
+      size: 12px;
+    }
+    color: white;
+    text-transform: uppercase;
+    background-color: $main-color;
+    padding: $common-padding;
+    letter-spacing: 0.1em;
+    border-radius: $common-padding/2;
+    border: none;
+    outline: none;
+    margin-top: $common-padding/2;
+    margin-bottom: $common-padding*4;
+    cursor: pointer;
+
+    &:hover {
+      background-color: $header-color;
+      transition: 0.5s;
+    }
+  }
+}

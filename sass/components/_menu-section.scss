@@ -1,0 +1,24 @@
+.menu-section {
+  cursor: pointer;
+  padding: $common-padding/2;
+
+  &__img {
+    width: 50px;
+    display: inline-block;
+    color: $text-color;
+    margin: $common-padding/2;
+  }
+
+  &__name{
+    display: inline-block;
+    vertical-align: top;
+    font: {
+      family: $header-font-family;
+      size: 15px;
+      weight: 500;
+    }
+    color: $text-color;
+    text-transform: capitalize;
+    margin: $common-padding;
+  }
+}

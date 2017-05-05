@@ -1,0 +1,71 @@
+.menu-proposition {
+  position: absolute;
+  opacity: 0;
+  height: 700px;
+  width: 100%;
+
+  &--active {
+    opacity: 1;
+  }
+
+  &__wrapper {
+    border-bottom: 1px dashed rgba(180, 180, 180, 0.24);
+  }
+
+  &__name {
+    font: {
+      family: $header-font-family;
+      weight: 500;
+      size: 16px;
+    }
+    color: $header-color;
+    text-transform: capitalize;
+    margin-bottom: 0;
+    margin-top: $common-padding*4;
+  }
+
+  &__ingredients {
+    font: {
+      family: $body-font-family;
+      size: 15px;
+    }
+    color: $menu-color;
+    margin-top: 0;
+  }
+
+  &__kcal {
+    font: {
+      family: $body-font-family;
+      size: 16px;
+      weight: 500;
+    }
+    color: $text-color;
+    text-transform: capitalize;
+
+    & strong {
+      font: {
+        family: $paragraph-font-family;
+        size: 17px;
+        weight: normal;
+      }
+      color: $header-color;
+    }
+  }
+
+  &__price {
+    font: {
+      family: $paragraph-font-family;
+      size: 17px;
+      weight: normal;
+    }
+    color: $header-color;
+
+    & strong {
+      font: {
+        family: $header-font-family;
+        weight: normal;
+        size: 16px;
+      }
+    }
+  }
+}
