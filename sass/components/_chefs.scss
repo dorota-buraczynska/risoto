@@ -1,0 +1,54 @@
+.chefs {
+  text-align: center;
+
+  &__header {
+    font: {
+      family: $paragraph-font-family;
+      size: 32px;
+    }
+    color: $main-color;
+    margin: 0;
+    padding-top: $common-padding*4;
+  }
+
+  &__title {
+    font: {
+      family: $header-font-family;
+      weight: 500;
+      size: 40px;
+    }
+    color: $header-color;
+    margin: 0;
+
+    &:first-letter {
+      text-transform: uppercase;
+    }
+  }
+
+  &__text {
+    font: {
+      family: $body-font-family;
+      weight: normal;
+      size: 17px;
+    }
+    color: $text-color;
+    margin: 0 $common-padding*4 $common-padding*3 $common-padding*4;
+  }
+
+  &__image {
+    max-width: 100%;
+  }
+
+  &__slogan {
+    font: {
+      family: $paragraph-font-family;
+      size: 36px;
+      weight: normal;
+    }
+    color: white;
+    background-color: $main-color;
+    text-transform: capitalize;
+    padding: $common-padding*3 $common-padding/8;
+    margin: 0;
+  }
+}

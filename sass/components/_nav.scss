@@ -19,7 +19,7 @@
   &__title {
     @include z-index(header-items);
     width: 150px;
-    padding: $common-padding 0;
+    padding: $common-padding $common-padding/4;
     position: relative;
   }
 
