@@ -13,6 +13,17 @@
     color: $main-color;
   }
 
+  &--active {
+    .menu-section__img {
+      filter: grayscale(0);
+      opacity: 1;
+    }
+
+    .menu-section__name {
+      color: $main-color;
+    }
+  }
+
   &__img {
     width: 50px;
     display: inline-block;
@@ -20,11 +31,6 @@
     margin: $common-padding/2;
     filter: grayscale(1);
     opacity: 0.5;
-
-    &--active {
-      filter: grayscale(0);
-      opacity: 1;
-    }
   }
 
   &__name {
@@ -38,9 +44,5 @@
     color: $text-color;
     text-transform: capitalize;
     margin: $common-padding;
-
-    &--active {
-      color: $main-color;
-    }
   }
 }

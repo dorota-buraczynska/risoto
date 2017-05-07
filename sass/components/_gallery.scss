@@ -94,6 +94,8 @@
   &__modal-image {
     max-width: 100%;
     cursor: pointer;
+    position: relative;
+    left: 0;
   }
 
   &__slider-wrapper {

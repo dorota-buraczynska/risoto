@@ -52,28 +52,14 @@ $('.slider__button--right').on('click', function () {
 $('.menu-section').on('click', function () {
     var menuNavSection = $(this).attr('data-menu-nav-section');
     var activeClass = 'menu-proposition--active';
-    var nameActiveClass = 'menu-section__name--active';
-    var imgActiveClass = 'menu-section__img--active';
-    var starters = $('.menu-proposition[data-menu-section="starters"]');
-    var dishes = $('.menu-proposition[data-menu-section="dishes"]');
-    var deserts = $('.menu-proposition[data-menu-section="deserts"]');
-    var drinks = $('.menu-proposition[data-menu-section="drinks"]');
+    var menuSectionActiveClass = 'menu-section--active';
 
     $('.restaurant-menu__proposition').removeClass(activeClass);
-    $('.menu-section__name').removeClass(nameActiveClass);
-    $('.menu-section__img').removeClass(imgActiveClass);
-    $(this).find('.menu-section__name').addClass(nameActiveClass);
-    $(this).find('.menu-section__img').addClass(imgActiveClass);
+    $(this)
+        .addClass(menuSectionActiveClass)
+        .siblings().removeClass(menuSectionActiveClass);
 
-    if (menuNavSection === 'starters') {
-        starters.addClass(activeClass);
-    } else if (menuNavSection === 'dishes') {
-        dishes.addClass(activeClass);
-    } else if (menuNavSection === 'deserts') {
-        deserts.addClass(activeClass);
-    } else {
-        drinks.addClass(activeClass);
-    }
+    $('.menu-proposition[data-menu-section="' + menuNavSection + '"]').addClass(activeClass);
 });
 
 //gallery slider
@@ -92,7 +78,12 @@ var hideModalImages = function () {
 
 var showModalImage = function (imageIndex) {
     var modalImage = $('.gallery__modal-wrapper').eq(imageIndex);
+    var modalImages = $('.gallery__modal-image');
     modalImage.css('display', 'block');
+    modalImages
+        .css({left: '18px'})
+        .eq(imageIndex).animate({left: '0'}, 300);
+
 };
 
 $('.gallery__image-wrapper').on('click', function () {
@@ -107,12 +98,27 @@ $('.gallery__slide').on('click', function () {
     var slideIndex = $(this).index();
     hideModalImages();
     showModalImage(slideIndex);
+
 });
 
-$('.gallery__modal-image').on('click', function () {
-    var imageIndex = $(this).index();
-    console.log(imageIndex);
+$('.gallery__modal-wrapper').on('click', function () {
+    var slides = $('.gallery__modal-wrapper');
+    var slide = $('.gallery__modal-image');
+    var firstSlide = $('.gallery__modal-wrapper[data-image-number="1"]');
+    var imageNumber = parseInt($(this).attr('data-image-number'));
+    var nextImageNumber = imageNumber + 1;
+    var nextImage = $('.gallery__modal-wrapper[data-image-number=' + nextImageNumber + ']');
+
+    slide.css({left: '18px'});
+    $(this).css('display', 'none');
+    nextImage.css('display', 'block');
+    nextImage.find('.gallery__modal-image').animate({left: '0'}, 300);
+    if (nextImageNumber > slides.length) {
+        firstSlide.css('display', 'block');
+        firstSlide.find('.gallery__modal-image').animate({left: '0'}, 300);
+    }
 });
+
 
 $('.gallery__modal-close').on('click', function () {
     $('body').css('overflow', 'auto');

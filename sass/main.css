@@ -312,6 +312,11 @@ body {
     opacity: 1; }
   .menu-section:hover .menu-section__name {
     color: #9061C2; }
+  .menu-section--active .menu-section__img {
+    filter: grayscale(0);
+    opacity: 1; }
+  .menu-section--active .menu-section__name {
+    color: #9061C2; }
   .menu-section__img {
     width: 50px;
     display: inline-block;
@@ -319,9 +324,6 @@ body {
     margin: 10px;
     filter: grayscale(1);
     opacity: 0.5; }
-    .menu-section__img--active {
-      filter: grayscale(0);
-      opacity: 1; }
   .menu-section__name {
     display: inline-block;
     vertical-align: top;
@@ -331,8 +333,6 @@ body {
     color: #b4b4b4;
     text-transform: capitalize;
     margin: 20px; }
-    .menu-section__name--active {
-      color: #9061C2; }
 
 .opening-hours {
   background-color: #9061C2;
@@ -498,7 +498,9 @@ body {
     top: 25%; }
   .gallery__modal-image {
     max-width: 100%;
-    cursor: pointer; }
+    cursor: pointer;
+    position: relative;
+    left: 0; }
   .gallery__slider-wrapper {
     width: 100%;
     overflow-x: auto;
