@@ -75,3 +75,49 @@ $('.menu-section').on('click', function () {
         drinks.addClass(activeClass);
     }
 });
+
+//gallery slider
+var openGallery = function () {
+    $('.gallery__modal').css('display', 'block');
+};
+
+var closeGallery = function () {
+    $('.gallery__modal').css('display', 'none');
+};
+
+var hideModalImages = function () {
+    var modalImages = $('.gallery__modal-wrapper');
+    modalImages.css('display', 'none');
+};
+
+var showModalImage = function (imageIndex) {
+    var modalImage = $('.gallery__modal-wrapper').eq(imageIndex);
+    modalImage.css('display', 'block');
+};
+
+$('.gallery__image-wrapper').on('click', function () {
+    var imageIndex = $(this).index();
+    $('body').css('overflow', 'hidden');
+    openGallery();
+    hideModalImages();
+    showModalImage(imageIndex);
+});
+
+$('.gallery__slide').on('click', function () {
+    var slideIndex = $(this).index();
+    hideModalImages();
+    showModalImage(slideIndex);
+});
+
+$('.gallery__modal-image').on('click', function () {
+    var imageIndex = $(this).index();
+    console.log(imageIndex);
+});
+
+$('.gallery__modal-close').on('click', function () {
+    $('body').css('overflow', 'auto');
+    closeGallery();
+});
+
+
+
