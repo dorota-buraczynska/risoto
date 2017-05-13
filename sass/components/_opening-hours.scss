@@ -21,9 +21,9 @@
       weight: 500;
     }
     color: white;
-    text-transform: uppercase;
+    text-transform: capitalize;
     padding-top: $common-padding*7;
-    margin: 0;
+    margin-bottom: $common-padding;
   }
 
   &__list {

@@ -1,0 +1,10 @@
+.copyrights {
+  background-color: $footer-bg-color;
+  text-align: center;
+  padding-top: $common-padding*2;
+  padding-bottom: $common-padding*3;
+
+  &__text {
+    color: $text-color;
+  }
+}

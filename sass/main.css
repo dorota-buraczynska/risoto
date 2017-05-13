@@ -1,8 +1,7 @@
-body {
-  margin: 0; }
-
 * {
-  box-sizing: border-box; }
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0; }
 
 .nav {
   position: relative; }
@@ -156,6 +155,7 @@ body {
     font-size: 12px;
     font-weight: 500;
     padding: 20px;
+    margin-top: 20px;
     border-radius: 10px;
     letter-spacing: 0.1rem; }
 
@@ -171,7 +171,7 @@ body {
     padding-bottom: 60px; }
   .welcome__header {
     color: #9061C2;
-    margin-top: 100px;
+    margin-top: 80px;
     margin-bottom: 0;
     font-family: "Playball", cursive;
     font-size: 32px; }
@@ -189,9 +189,11 @@ body {
     font-family: "Playfair Display", serif;
     font-size: 17px;
     color: #b4b4b4;
-    margin: 0 40px; }
+    margin: 0 40px;
+    line-height: 1.7em; }
   .welcome__image {
-    max-width: 100%; }
+    max-width: 100%;
+    margin-top: 20px; }
 
 .about-restaurant__image {
   max-width: 100%;
@@ -206,18 +208,20 @@ body {
     background-image: url("http://uploads.webflow.com/57ea3312eaa002fa3bee3f81/57ea82a21117c47f4d945521_photo-4.jpg"); }
 
 .info {
-  margin: 140px 40px; }
+  margin: 120px 40px; }
   .info__image {
     width: 100px; }
   .info__heading {
     font-family: "Poppins", sans-serif;
     font-weight: 500;
     font-size: 20px;
-    text-transform: capitalize; }
+    text-transform: capitalize;
+    margin: 20px 0; }
   .info__text {
     font-family: "Playfair Display", serif;
     font-size: 15px;
-    color: #b4b4b4; }
+    color: #b4b4b4;
+    line-height: 1.7em; }
 
 .restaurant-menu {
   text-align: center;
@@ -239,7 +243,7 @@ body {
       text-transform: uppercase; }
   .restaurant-menu__contents {
     width: 100%;
-    height: 700px; }
+    height: 580px; }
   .restaurant-menu__button {
     font-family: "Poppins", sans-serif;
     font-weight: 500;
@@ -352,9 +356,9 @@ body {
     font-size: 30px;
     font-weight: 500;
     color: white;
-    text-transform: uppercase;
+    text-transform: capitalize;
     padding-top: 140px;
-    margin: 0; }
+    margin-bottom: 20px; }
   .opening-hours__list {
     list-style-type: none;
     padding: 0; }
@@ -413,6 +417,7 @@ body {
     font-weight: normal;
     font-size: 17px;
     color: #b4b4b4;
+    line-height: 1.7em;
     margin: 0 80px 60px 80px; }
   .chefs__image {
     max-width: 100%; }
@@ -517,9 +522,88 @@ body {
   .gallery__slide-image {
     width: 100%; }
 
-.footer__logo {
-  max-width: 100%; }
-.footer__icons-item {
-  max-width: 100%; }
+.footer {
+  background-color: #212121;
+  text-align: center;
+  padding: 0 20px 40px 20px;
+  border-bottom: 1px solid #3E3E3E; }
+  .footer__logo {
+    width: 180px;
+    margin-top: 60px; }
+  .footer__socials {
+    margin: 20px 0; }
+  .footer__socials-text {
+    display: inline-block;
+    color: white;
+    font-family: "Playball", cursive;
+    font-size: 18px;
+    font-weight: normal; }
+  .footer__socials-item {
+    display: inline-block;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    position: relative;
+    vertical-align: middle;
+    transition: 1s; }
+    .footer__socials-item:hover {
+      background-color: #9061C2; }
+      .footer__socials-item:hover .footer__socials-link {
+        color: white; }
+  .footer__socials-link {
+    text-decoration: none;
+    color: #b4b4b4;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 10px;
+    cursor: pointer;
+    transition: 1s; }
+  .footer__icons-item {
+    max-width: 100%; }
+  .footer__form-input {
+    width: 100%;
+    margin: 10px 0;
+    font-size: 14px;
+    font-family: "Playfair Display", serif;
+    padding: 20px 10px;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+    background-color: #363636; }
+  .footer__form-button {
+    border: none;
+    outline: none;
+    background-color: #9061C2;
+    width: 100%;
+    font-size: 12px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    text-transform: uppercase;
+    color: white;
+    padding: 20px 0;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 1s; }
+    .footer__form-button:hover {
+      background-color: #121212; }
+  .footer__icons-item {
+    width: 60px;
+    margin: 20px 0; }
+  .footer__icons-text {
+    color: #b4b4b4;
+    line-height: 1.7em;
+    font-size: 17px;
+    font-family: "Playfair Display", serif; }
+
+.copyrights {
+  background-color: #212121;
+  text-align: center;
+  padding-top: 40px;
+  padding-bottom: 60px; }
+  .copyrights__text {
+    color: #b4b4b4; }
 
 /*# sourceMappingURL=main.css.map */

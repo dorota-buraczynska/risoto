@@ -1,5 +1,5 @@
 .info {
-  margin: $common-padding*7 $common-padding*2;
+  margin: $common-padding*6 $common-padding*2;
 
   &__image {
     width: 100px;
@@ -12,6 +12,7 @@
       size: 20px;
     }
     text-transform: capitalize;
+    margin: $common-padding 0;
   }
 
   &__text {
@@ -20,5 +21,7 @@
       size: 15px;
     }
     color: $text-color;
+    line-height: $line-height;
+
   }
 }
