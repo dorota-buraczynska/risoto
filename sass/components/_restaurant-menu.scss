@@ -2,6 +2,9 @@
   text-align: center;
   background-color: $section-bg-color;
 
+  &__nav {
+    margin-bottom: $common-padding;
+  }
   &__header {
     font: {
       family: $paragraph-font-family;
@@ -29,7 +32,11 @@
 
   &__contents {
     width: 100%;
-    height: 580px;
+    height: 400px;
+
+    @include medium-screen {
+      height: 300px;
+    }
   }
 
   &__button {

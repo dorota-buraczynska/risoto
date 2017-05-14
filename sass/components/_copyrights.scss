@@ -6,5 +6,9 @@
 
   &__text {
     color: $text-color;
+    font: {
+      size: 15px;
+      family: $body-font-family;
+    }
   }
 }

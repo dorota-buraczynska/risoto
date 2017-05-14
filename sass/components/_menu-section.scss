@@ -4,6 +4,11 @@
   width: 200px;
   margin: auto;
 
+  @include medium-screen {
+    width: 140px;
+    display: inline-block;
+  }
+
   &:hover .menu-section__img {
     filter: grayscale(0);
     opacity: 1;
@@ -44,5 +49,9 @@
     color: $text-color;
     text-transform: capitalize;
     margin: $common-padding;
+  }
+
+  @include medium-screen {
+    margin: $common-padding 0;
   }
 }

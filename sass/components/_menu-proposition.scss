@@ -12,6 +12,16 @@
     border-bottom: 1px dashed rgba(180, 180, 180, 0.24);
   }
 
+  &__title {
+    @include medium-screen {
+      display: inline-block;
+      width: 50%;
+      text-align: left;
+      margin-left: $common-padding*2;
+      padding-bottom: $common-padding;
+    }
+  }
+
   &__name {
     font: {
       family: $header-font-family;
@@ -21,7 +31,7 @@
     color: $header-color;
     text-transform: capitalize;
     margin-bottom: 0;
-    margin-top: $common-padding*4;
+    margin-top: $common-padding;
   }
 
   &__ingredients {
@@ -41,6 +51,12 @@
     }
     color: $text-color;
     text-transform: capitalize;
+
+    @include medium-screen {
+      display: inline-block;
+      width: 15%;
+      text-align: left;
+    }
 
     & strong {
       font: {
@@ -66,6 +82,12 @@
         weight: normal;
         size: 16px;
       }
+    }
+
+    @include medium-screen {
+      display: inline-block;
+      width: 15%;
+      text-align: left;
     }
   }
 }

@@ -57,6 +57,13 @@
     max-width: 100%;
   }
 
+  &__form {
+    @include medium-screen {
+      width: 550px;
+      margin: auto;
+    }
+  }
+
   &__form-input {
     width: 100%;
     margin: $common-padding/2 0;
@@ -69,6 +76,13 @@
     outline: none;
     border: none;
     background-color: $footer-input-bg-color;
+
+    @include medium-screen {
+      float: left;
+      width: 400px;
+      margin: 0;
+      border-radius: $common-padding/4 0 0 $common-padding/4;
+    }
   }
 
   &__form-button {
@@ -89,8 +103,22 @@
     cursor: pointer;
     transition: 1s;
 
+    @include medium-screen {
+      width: 150px;
+      float: left;
+      border-radius: 0 $common-padding/4 $common-padding/4 0;
+    }
+
     &:hover {
       background-color: $header-color;
+    }
+  }
+
+  &__icons-wrapper {
+    @include  medium-screen {
+      display: inline-block;
+      width: 32%;
+      vertical-align: top;
     }
   }
 

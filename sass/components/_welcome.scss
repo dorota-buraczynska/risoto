@@ -32,7 +32,7 @@
     &::first-letter {
       text-transform: capitalize;
     }
-    @media screen and (min-width: 480px) {
+    @include small-medium-large{
       font-size: 40px;
     }
   }
