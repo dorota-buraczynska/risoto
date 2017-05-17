@@ -24,6 +24,10 @@
     text-transform: capitalize;
     padding-top: $common-padding*7;
     margin-bottom: $common-padding;
+
+    @include large-screen {
+      padding-top: $common-padding*10;
+    }
   }
 
   &__list {
@@ -76,5 +80,15 @@
       background-color: $header-color;
       color: white;
     }
+
+    @include large-screen {
+      margin-bottom: $common-padding*10;
+    }
+  }
+
+  @include large-screen {
+    float: right;
+    width: 35%;
+    vertical-align: top;
   }
 }

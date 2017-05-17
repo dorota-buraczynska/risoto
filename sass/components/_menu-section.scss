@@ -4,11 +4,6 @@
   width: 200px;
   margin: auto;
 
-  @include medium-screen {
-    width: 140px;
-    display: inline-block;
-  }
-
   &:hover .menu-section__img {
     filter: grayscale(0);
     opacity: 1;
@@ -53,5 +48,13 @@
 
   @include medium-screen {
     margin: $common-padding 0;
+    width: 140px;
+    display: inline-block;
+  }
+
+  @include large-screen {
+    margin: 0;
+    display: inline-block;
+    width: 30%;
   }
 }

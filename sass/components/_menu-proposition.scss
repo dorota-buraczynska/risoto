@@ -20,6 +20,13 @@
       margin-left: $common-padding*2;
       padding-bottom: $common-padding;
     }
+
+    @include large-screen {
+      display: inline-block;
+      width: 42%;
+      text-align: left;
+      padding-bottom: $common-padding;
+    }
   }
 
   &__name {
@@ -58,6 +65,12 @@
       text-align: left;
     }
 
+    @include large-screen {
+      display: inline-block;
+      width: 15%;
+      text-align: left;
+    }
+
     & strong {
       font: {
         family: $paragraph-font-family;
@@ -89,5 +102,15 @@
       width: 15%;
       text-align: left;
     }
+
+    @include large-screen {
+      display: inline-block;
+      width: 15%;
+      text-align: left;
+    }
+  }
+
+  @include large-screen {
+    width: 65%;
   }
 }

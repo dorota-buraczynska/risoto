@@ -24,4 +24,13 @@
     line-height: $line-height;
 
   }
+
+
+  @include large-screen {
+    display: inline-block;
+    width: 33%;
+    margin:0;
+    padding: $common-padding*4 $common-padding *2 0 $common-padding*2;
+    vertical-align: top;
+  }
 }

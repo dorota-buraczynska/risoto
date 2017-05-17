@@ -4,7 +4,7 @@
 
   &__image-wrapper {
     position: relative;
-    max-width: 50%;
+    max-width: 33.333%;
     display: inline-block;
     overflow: hidden;
 
@@ -30,16 +30,16 @@
       transition: all 1s;
       cursor: pointer;
     }
-
-    @include medium-screen {
-      width: 33.333%;
-    }
   }
 
   &__image {
     max-width: 100%;
     display: inline-block;
     margin: 0;
+  }
+
+  &__image--bigger {
+    width: 330px;
   }
 
   &__icon {

@@ -16,5 +16,10 @@
     &--3 {
       background-image: url("http://uploads.webflow.com/57ea3312eaa002fa3bee3f81/57ea82a21117c47f4d945521_photo-4.jpg");
     }
+
+    @include large-screen {
+      display: inline-block;
+      width: 33%;
+    }
   }
 }

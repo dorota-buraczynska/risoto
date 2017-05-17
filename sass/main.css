@@ -211,6 +211,10 @@
     background-image: url("http://uploads.webflow.com/57ea3312eaa002fa3bee3f81/57ea8276647642d547f2252e_photo-3.jpg"); }
   .about-restaurant__image--3 {
     background-image: url("http://uploads.webflow.com/57ea3312eaa002fa3bee3f81/57ea82a21117c47f4d945521_photo-4.jpg"); }
+  @media (min-width: 992px) {
+    .about-restaurant__image {
+      display: inline-block;
+      width: 33%; } }
 
 .info {
   margin: 120px 40px; }
@@ -227,6 +231,13 @@
     font-size: 15px;
     color: #b4b4b4;
     line-height: 1.7em; }
+  @media (min-width: 992px) {
+    .info {
+      display: inline-block;
+      width: 33%;
+      margin: 0;
+      padding: 80px 40px 0 40px;
+      vertical-align: top; } }
 
 .restaurant-menu {
   text-align: center;
@@ -254,6 +265,9 @@
     @media (min-width: 768px) and (max-width: 991px) {
       .restaurant-menu__contents {
         height: 300px; } }
+    @media (min-width: 992px) {
+      .restaurant-menu__contents {
+        height: 266px; } }
   .restaurant-menu__button {
     font-family: "Poppins", sans-serif;
     font-weight: 500;
@@ -272,6 +286,10 @@
     transition: 0.5s; }
     .restaurant-menu__button:hover {
       background-color: #121212; }
+  @media (min-width: 992px) {
+    .restaurant-menu {
+      float: left;
+      width: 65%; } }
 
 .menu-proposition {
   position: absolute;
@@ -288,6 +306,12 @@
       width: 50%;
       text-align: left;
       margin-left: 40px;
+      padding-bottom: 20px; } }
+  @media (min-width: 992px) {
+    .menu-proposition__title {
+      display: inline-block;
+      width: 42%;
+      text-align: left;
       padding-bottom: 20px; } }
   .menu-proposition__name {
     font-family: "Poppins", sans-serif;
@@ -313,6 +337,11 @@
         display: inline-block;
         width: 15%;
         text-align: left; } }
+    @media (min-width: 992px) {
+      .menu-proposition__kcal {
+        display: inline-block;
+        width: 15%;
+        text-align: left; } }
     .menu-proposition__kcal strong {
       font-family: "Playball", cursive;
       font-size: 17px;
@@ -332,16 +361,20 @@
         display: inline-block;
         width: 15%;
         text-align: left; } }
+    @media (min-width: 992px) {
+      .menu-proposition__price {
+        display: inline-block;
+        width: 15%;
+        text-align: left; } }
+  @media (min-width: 992px) {
+    .menu-proposition {
+      width: 65%; } }
 
 .menu-section {
   cursor: pointer;
   padding: 10px;
   width: 200px;
   margin: auto; }
-  @media (min-width: 768px) and (max-width: 991px) {
-    .menu-section {
-      width: 140px;
-      display: inline-block; } }
   .menu-section:hover .menu-section__img {
     filter: grayscale(0);
     opacity: 1; }
@@ -370,7 +403,14 @@
     margin: 20px; }
   @media (min-width: 768px) and (max-width: 991px) {
     .menu-section {
-      margin: 20px 0; } }
+      margin: 20px 0;
+      width: 140px;
+      display: inline-block; } }
+  @media (min-width: 992px) {
+    .menu-section {
+      margin: 0;
+      display: inline-block;
+      width: 30%; } }
 
 .opening-hours {
   background-color: #9061C2;
@@ -393,6 +433,9 @@
     text-transform: capitalize;
     padding-top: 140px;
     margin-bottom: 20px; }
+    @media (min-width: 992px) {
+      .opening-hours__title {
+        padding-top: 200px; } }
   .opening-hours__list {
     list-style-type: none;
     padding: 0; }
@@ -429,6 +472,14 @@
     .opening-hours__button:hover {
       background-color: #121212;
       color: white; }
+    @media (min-width: 992px) {
+      .opening-hours__button {
+        margin-bottom: 200px; } }
+  @media (min-width: 992px) {
+    .opening-hours {
+      float: right;
+      width: 35%;
+      vertical-align: top; } }
 
 .chefs {
   text-align: center; }
@@ -470,7 +521,7 @@
   font-size: 0; }
   .gallery__image-wrapper {
     position: relative;
-    max-width: 50%;
+    max-width: 33.333%;
     display: inline-block;
     overflow: hidden; }
     .gallery__image-wrapper:hover:after {
@@ -490,13 +541,12 @@
       z-index: 1;
       transition: all 1s;
       cursor: pointer; }
-    @media (min-width: 768px) and (max-width: 991px) {
-      .gallery__image-wrapper {
-        width: 33.333%; } }
   .gallery__image {
     max-width: 100%;
     display: inline-block;
     margin: 0; }
+  .gallery__image--bigger {
+    width: 330px; }
   .gallery__icon {
     background: url("http://uploads.webflow.com/57ea3312eaa002fa3bee3f81/57ed1802af9d15040c52b3f3_font-awesome_4-6-3_search_100_0_ffffff_none%20(2).png") no-repeat black center;
     background-size: 20px;
@@ -617,6 +667,10 @@
     .footer__form {
       width: 550px;
       margin: auto; } }
+  @media (min-width: 992px) {
+    .footer__form {
+      width: 550px;
+      margin: auto; } }
   .footer__form-input {
     width: 100%;
     margin: 10px 0;
@@ -628,6 +682,12 @@
     border: none;
     background-color: #363636; }
     @media (min-width: 768px) and (max-width: 991px) {
+      .footer__form-input {
+        float: left;
+        width: 400px;
+        margin: 0;
+        border-radius: 5px 0 0 5px; } }
+    @media (min-width: 992px) {
       .footer__form-input {
         float: left;
         width: 400px;
@@ -653,9 +713,19 @@
         width: 150px;
         float: left;
         border-radius: 0 5px 5px 0; } }
+    @media (min-width: 992px) {
+      .footer__form-button {
+        width: 150px;
+        float: left;
+        border-radius: 0 5px 5px 0; } }
     .footer__form-button:hover {
       background-color: #121212; }
   @media (min-width: 768px) and (max-width: 991px) {
+    .footer__icons-wrapper {
+      display: inline-block;
+      width: 32%;
+      vertical-align: top; } }
+  @media (min-width: 992px) {
     .footer__icons-wrapper {
       display: inline-block;
       width: 32%;

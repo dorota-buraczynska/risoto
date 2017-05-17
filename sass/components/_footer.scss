@@ -62,6 +62,11 @@
       width: 550px;
       margin: auto;
     }
+
+    @include large-screen {
+      width: 550px;
+      margin: auto;
+    }
   }
 
   &__form-input {
@@ -78,6 +83,13 @@
     background-color: $footer-input-bg-color;
 
     @include medium-screen {
+      float: left;
+      width: 400px;
+      margin: 0;
+      border-radius: $common-padding/4 0 0 $common-padding/4;
+    }
+
+    @include  large-screen {
       float: left;
       width: 400px;
       margin: 0;
@@ -109,6 +121,12 @@
       border-radius: 0 $common-padding/4 $common-padding/4 0;
     }
 
+    @include  large-screen {
+      width: 150px;
+      float: left;
+      border-radius: 0 $common-padding/4 $common-padding/4 0;
+    }
+
     &:hover {
       background-color: $header-color;
     }
@@ -116,6 +134,12 @@
 
   &__icons-wrapper {
     @include  medium-screen {
+      display: inline-block;
+      width: 32%;
+      vertical-align: top;
+    }
+
+    @include large-screen {
       display: inline-block;
       width: 32%;
       vertical-align: top;

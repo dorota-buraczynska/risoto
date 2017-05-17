@@ -37,6 +37,10 @@
     @include medium-screen {
       height: 300px;
     }
+
+    @include large-screen {
+      height: 266px;
+    }
   }
 
   &__button {
@@ -61,5 +65,10 @@
     &:hover {
       background-color: $header-color;
     }
+  }
+
+  @include large-screen {
+    float: left;
+    width: 65%;
   }
 }
