@@ -82,6 +82,10 @@
     @include small-screen {
       padding: $common-padding $common-padding*4;
     }
+
+    &::after {
+      content: ' [...]';
+    }
   }
 
   &__button {

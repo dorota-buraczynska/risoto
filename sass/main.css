@@ -859,6 +859,8 @@
       background-image: url("http://uploads.webflow.com/57ea3312eaa002fa3bee3f81/57ebc4c44c12cc233cbcf428_photo-5.jpg"); }
     .photo__image--news {
       background-image: url("http://uploads.webflow.com/57ea3312eaa002fa3bee3f81/57ed1a9081729e340142650c_food-big-2.jpg"); }
+    .photo__image--book-a-table {
+      background-image: url("http://uploads.webflow.com/57ea3312eaa002fa3bee3f81/57ed22f29b2f805201268b18_food-big-6.jpg"); }
     @media (min-width: 480px) and (max-width: 767px) {
       .photo__image {
         background-attachment: fixed; } }
@@ -962,6 +964,8 @@
     @media (min-width: 480px) and (max-width: 767px) {
       .news__text {
         padding: 20px 80px; } }
+    .news__text::after {
+      content: ' [...]'; }
   .news__button {
     font-family: "Poppins", sans-serif;
     font-weight: 500;

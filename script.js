@@ -1,6 +1,5 @@
 //nav
 $('.nav__menu-item').on('click', function (event) {
-    event.preventDefault();
     var itemaActiveClass = 'nav__menu-item--active';
     $(this)
         .addClass(itemaActiveClass)
