@@ -1,17 +1,55 @@
 .news {
+  @extend .container;
+  margin-bottom: $common-padding;
+
   &__wrapper {
    text-align: center;
+    font-size: 0;
+
+    @include small-screen {
+      text-align: center;
+    }
   }
 
   &__image {
     max-width: 420px;
     margin-top: $common-padding*2;
     margin-bottom: $common-padding;
+
+    @include medium-screen {
+      width: 40%;
+      display: inline-block;
+    }
+
+    @include large-screen {
+      width: 40%;
+      display: inline-block;
+    }
   }
 
   &__info {
     text-align: left;
     margin-left: $common-padding;
+
+    @include small-screen {
+    text-align: center;
+    }
+
+    @include medium-screen {
+      margin-left: $common-padding*2;
+      display: inline-block;
+      width: 54%;
+      margin-top: $common-padding*1.5;
+      vertical-align: top;
+    }
+
+    @include large-screen {
+      margin-left: $common-padding*2;
+      display: inline-block;
+      width: 54%;
+      margin-top: $common-padding*1.5;
+      vertical-align: top;
+    }
   }
 
   &__title {
@@ -40,6 +78,10 @@
     color: $text-color;
     line-height: $line-height;
     padding-top: $common-padding;
+
+    @include small-screen {
+      padding: $common-padding $common-padding*4;
+    }
   }
 
   &__button {

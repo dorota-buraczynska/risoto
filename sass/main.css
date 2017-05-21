@@ -100,7 +100,7 @@
 .visible {
   transform: translateY(0); }
 
-.container, .nav__container, .nav__menu-item, .welcome__container, .restaurant-menu__nav, .restaurant-menu__contents, .menu-proposition {
+.container, .nav__container, .nav__menu-item, .welcome__container, .restaurant-menu__nav, .restaurant-menu__contents, .menu-proposition, .news {
   max-width: 730px;
   margin: auto; }
 
@@ -903,48 +903,82 @@
       .photo__title-heading {
         font-size: 80px; } }
 
-.news__wrapper {
-  text-align: center; }
-.news__image {
-  max-width: 420px;
-  margin-top: 40px;
+.news {
   margin-bottom: 20px; }
-.news__info {
-  text-align: left;
-  margin-left: 20px; }
-.news__title {
-  font-size: 34px;
-  font-family: "Playball", cursive;
-  font-weight: normal;
-  text-transform: capitalize; }
-.news__date {
-  font-size: 16px;
-  font-family: "Playfair Display", serif;
-  color: #b4b4b4;
-  text-transform: capitalize; }
-.news__text {
-  font-size: 15px;
-  font-family: "Playfair Display", serif;
-  color: #b4b4b4;
-  line-height: 1.7em;
-  padding-top: 20px; }
-.news__button {
-  font-family: "Poppins", sans-serif;
-  font-weight: 500;
-  font-size: 12px;
-  color: white;
-  text-transform: uppercase;
-  background-color: #9061C2;
-  padding: 20px;
-  letter-spacing: 0.1em;
-  border-radius: 10px;
-  border: none;
-  outline: none;
-  margin-top: 10px;
-  margin-bottom: 40px;
-  cursor: pointer;
-  transition: 0.5s; }
-  .news__button:hover {
-    background-color: #121212; }
+  .news__wrapper {
+    text-align: center;
+    font-size: 0; }
+    @media (min-width: 480px) and (max-width: 767px) {
+      .news__wrapper {
+        text-align: center; } }
+  .news__image {
+    max-width: 420px;
+    margin-top: 40px;
+    margin-bottom: 20px; }
+    @media (min-width: 768px) and (max-width: 991px) {
+      .news__image {
+        width: 40%;
+        display: inline-block; } }
+    @media (min-width: 992px) {
+      .news__image {
+        width: 40%;
+        display: inline-block; } }
+  .news__info {
+    text-align: left;
+    margin-left: 20px; }
+    @media (min-width: 480px) and (max-width: 767px) {
+      .news__info {
+        text-align: center; } }
+    @media (min-width: 768px) and (max-width: 991px) {
+      .news__info {
+        margin-left: 40px;
+        display: inline-block;
+        width: 54%;
+        margin-top: 30px;
+        vertical-align: top; } }
+    @media (min-width: 992px) {
+      .news__info {
+        margin-left: 40px;
+        display: inline-block;
+        width: 54%;
+        margin-top: 30px;
+        vertical-align: top; } }
+  .news__title {
+    font-size: 34px;
+    font-family: "Playball", cursive;
+    font-weight: normal;
+    text-transform: capitalize; }
+  .news__date {
+    font-size: 16px;
+    font-family: "Playfair Display", serif;
+    color: #b4b4b4;
+    text-transform: capitalize; }
+  .news__text {
+    font-size: 15px;
+    font-family: "Playfair Display", serif;
+    color: #b4b4b4;
+    line-height: 1.7em;
+    padding-top: 20px; }
+    @media (min-width: 480px) and (max-width: 767px) {
+      .news__text {
+        padding: 20px 80px; } }
+  .news__button {
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-size: 12px;
+    color: white;
+    text-transform: uppercase;
+    background-color: #9061C2;
+    padding: 20px;
+    letter-spacing: 0.1em;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    margin-top: 10px;
+    margin-bottom: 40px;
+    cursor: pointer;
+    transition: 0.5s; }
+    .news__button:hover {
+      background-color: #121212; }
 
 /*# sourceMappingURL=main.css.map */
