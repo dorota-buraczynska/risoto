@@ -21,6 +21,10 @@
     &--active {
       opacity: 1;
     }
+
+    @include large-screen {
+      height: 1075px;
+    }
   }
 
   &__button {
@@ -66,6 +70,10 @@
     left: 0;
     top: 0;
     height: 100%;
+
+    @include large-screen {
+      background-size: cover;
+    }
   }
 
   &__title {
@@ -112,5 +120,9 @@
     margin-top: $common-padding;
     border-radius: $common-padding/2;
     letter-spacing: 0.1rem;
+  }
+
+  @include large-screen {
+    height: 850px;
   }
 }
