@@ -6,6 +6,20 @@
     background-size: cover;
     height: 300px;
     max-width: 100%;
+
+    @include small-screen {
+      background-attachment: fixed;
+    }
+
+    @include medium-screen {
+      height: 500px;
+      background-attachment: fixed;
+    }
+
+    @include large-screen {
+      height: 650px;
+      background-attachment: fixed;
+    }
   }
 
   &__bg {
@@ -14,6 +28,15 @@
     width: 100%;
     position: absolute;
     height: 300px;
+    background-size: cover;
+
+    @include medium-screen {
+      height: 500px;
+    }
+
+    @include large-screen {
+      height: 650px;
+    }
   }
 
   &__title {

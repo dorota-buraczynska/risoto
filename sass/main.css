@@ -202,6 +202,7 @@
       height: 850px; } }
 
 .welcome {
+  font-size: 0;
   background-image: url(http://uploads.webflow.com/57ea3312eaa002fa3bee3f81/57ea3d83eaa002fa3bee5de7_about-bg-50.png);
   height: 100%;
   width: 100%;
@@ -213,6 +214,16 @@
     padding-bottom: 60px; }
     .welcome__container--no-padding {
       padding: 0; }
+  @media (min-width: 768px) and (max-width: 991px) {
+    .welcome__text-wrapper {
+      display: inline-block;
+      width: 50%;
+      vertical-align: top; } }
+  @media (min-width: 992px) {
+    .welcome__text-wrapper {
+      display: inline-block;
+      width: 50%;
+      vertical-align: top; } }
   .welcome__header {
     color: #9061C2;
     margin-top: 80px;
@@ -256,6 +267,14 @@
     max-width: 100%;
     margin: 20px auto 0 auto;
     display: block; }
+    @media (min-width: 768px) and (max-width: 991px) {
+      .welcome__image--inline-block {
+        display: inline-block;
+        width: 50%; } }
+    @media (min-width: 992px) {
+      .welcome__image--inline-block {
+        display: inline-block;
+        width: 50%; } }
 
 .about-restaurant {
   font-size: 0; }
@@ -830,12 +849,30 @@
     background-size: cover;
     height: 300px;
     max-width: 100%; }
+    @media (min-width: 480px) and (max-width: 767px) {
+      .photo__image {
+        background-attachment: fixed; } }
+    @media (min-width: 768px) and (max-width: 991px) {
+      .photo__image {
+        height: 500px;
+        background-attachment: fixed; } }
+    @media (min-width: 992px) {
+      .photo__image {
+        height: 650px;
+        background-attachment: fixed; } }
   .photo__bg {
     z-index: 2;
     background-image: url("http://uploads.webflow.com/57ea3312eaa002fa3bee3f81/57ea528dfbbf45e84764f665_backg-2.png");
     width: 100%;
     position: absolute;
-    height: 300px; }
+    height: 300px;
+    background-size: cover; }
+    @media (min-width: 768px) and (max-width: 991px) {
+      .photo__bg {
+        height: 500px; } }
+    @media (min-width: 992px) {
+      .photo__bg {
+        height: 650px; } }
   .photo__title {
     z-index: 3;
     position: absolute;

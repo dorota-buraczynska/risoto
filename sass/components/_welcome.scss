@@ -1,4 +1,5 @@
 .welcome {
+  font-size: 0;
   background-image: url(http://uploads.webflow.com/57ea3312eaa002fa3bee3f81/57ea3d83eaa002fa3bee5de7_about-bg-50.png);
   height: 100%;
   width: 100%;
@@ -14,6 +15,21 @@
     &--no-padding {
       padding: 0;
     }
+  }
+
+  &__text-wrapper {
+    @include medium-screen {
+      display: inline-block;
+      width: 50%;
+      vertical-align: top;
+    }
+
+    @include large-screen {
+      display: inline-block;
+      width: 50%;
+      vertical-align: top;
+    }
+
   }
 
   &__header {
@@ -79,5 +95,18 @@
     max-width: 100%;
     margin: $common-padding auto 0 auto;
     display: block;
+
+    &--inline-block {
+      @include medium-screen {
+        display: inline-block;
+        width: 50%;
+      }
+
+      @include large-screen {
+        display: inline-block;
+        width: 50%;
+      }
+
+    }
   }
 }
