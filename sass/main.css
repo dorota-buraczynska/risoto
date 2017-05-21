@@ -200,21 +200,23 @@
     max-width: 100%;
     margin-top: 20px; }
 
-.about-restaurant__image {
-  max-width: 100%;
-  background-position: center;
-  background-size: cover;
-  height: 600px; }
-  .about-restaurant__image--1 {
-    background-image: url("http://uploads.webflow.com/57ea3312eaa002fa3bee3f81/57ea80bf1117c47f4d94510b_photo-1.jpg"); }
-  .about-restaurant__image--2 {
-    background-image: url("http://uploads.webflow.com/57ea3312eaa002fa3bee3f81/57ea8276647642d547f2252e_photo-3.jpg"); }
-  .about-restaurant__image--3 {
-    background-image: url("http://uploads.webflow.com/57ea3312eaa002fa3bee3f81/57ea82a21117c47f4d945521_photo-4.jpg"); }
-  @media (min-width: 992px) {
-    .about-restaurant__image {
-      display: inline-block;
-      width: 33%; } }
+.about-restaurant {
+  font-size: 0; }
+  .about-restaurant__image {
+    max-width: 100%;
+    background-position: center;
+    background-size: cover;
+    height: 600px; }
+    .about-restaurant__image--1 {
+      background-image: url("http://uploads.webflow.com/57ea3312eaa002fa3bee3f81/57ea80bf1117c47f4d94510b_photo-1.jpg"); }
+    .about-restaurant__image--2 {
+      background-image: url("http://uploads.webflow.com/57ea3312eaa002fa3bee3f81/57ea8276647642d547f2252e_photo-3.jpg"); }
+    .about-restaurant__image--3 {
+      background-image: url("http://uploads.webflow.com/57ea3312eaa002fa3bee3f81/57ea82a21117c47f4d945521_photo-4.jpg"); }
+    @media (min-width: 992px) {
+      .about-restaurant__image {
+        display: inline-block;
+        width: 33%; } }
 
 .info {
   margin: 120px 40px; }
@@ -286,10 +288,13 @@
     transition: 0.5s; }
     .restaurant-menu__button:hover {
       background-color: #121212; }
+    @media (min-width: 992px) {
+      .restaurant-menu__button {
+        margin-top: 20px; } }
   @media (min-width: 992px) {
     .restaurant-menu {
       float: left;
-      width: 65%; } }
+      width: 66%; } }
 
 .menu-proposition {
   position: absolute;
@@ -392,6 +397,9 @@
     margin: 10px;
     filter: grayscale(1);
     opacity: 0.5; }
+    @media (min-width: 992px) {
+      .menu-section__img {
+        margin: 0; } }
   .menu-section__name {
     display: inline-block;
     vertical-align: top;
@@ -401,6 +409,9 @@
     color: #b4b4b4;
     text-transform: capitalize;
     margin: 20px; }
+    @media (min-width: 992px) {
+      .menu-section__name {
+        margin: 20px 0 30px 0; } }
   @media (min-width: 768px) and (max-width: 991px) {
     .menu-section {
       margin: 20px 0;
@@ -410,7 +421,8 @@
     .menu-section {
       margin: 0;
       display: inline-block;
-      width: 30%; } }
+      width: 18%;
+      padding: 0; } }
 
 .opening-hours {
   background-color: #9061C2;
@@ -433,9 +445,6 @@
     text-transform: capitalize;
     padding-top: 140px;
     margin-bottom: 20px; }
-    @media (min-width: 992px) {
-      .opening-hours__title {
-        padding-top: 200px; } }
   .opening-hours__list {
     list-style-type: none;
     padding: 0; }
@@ -472,14 +481,12 @@
     .opening-hours__button:hover {
       background-color: #121212;
       color: white; }
-    @media (min-width: 992px) {
-      .opening-hours__button {
-        margin-bottom: 200px; } }
   @media (min-width: 992px) {
     .opening-hours {
       float: right;
-      width: 35%;
-      vertical-align: top; } }
+      width: 34%;
+      vertical-align: top;
+      height: 725px; } }
 
 .chefs {
   text-align: center; }

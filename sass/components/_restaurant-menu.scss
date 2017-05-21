@@ -65,10 +65,14 @@
     &:hover {
       background-color: $header-color;
     }
+
+    @include large-screen {
+      margin-top: $common-padding;
+    }
   }
 
   @include large-screen {
     float: left;
-    width: 65%;
+    width: 66%;
   }
 }
