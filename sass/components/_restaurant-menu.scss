@@ -82,6 +82,9 @@
     @include large-screen {
       width: 100%;
     }
+  }
 
+  &--bottom-padding {
+    padding-bottom: $common-padding*2;
   }
 }

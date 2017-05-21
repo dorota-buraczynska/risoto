@@ -14,6 +14,10 @@
       background-image: url("http://uploads.webflow.com/57ea3312eaa002fa3bee3f81/57ebc4c44c12cc233cbcf428_photo-5.jpg");
     }
 
+    &--news {
+      background-image: url("http://uploads.webflow.com/57ea3312eaa002fa3bee3f81/57ed1a9081729e340142650c_food-big-2.jpg");
+    }
+
     @include small-screen {
       background-attachment: fixed;
     }
