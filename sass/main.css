@@ -211,6 +211,8 @@
   .welcome__container {
     text-align: center;
     padding-bottom: 60px; }
+    .welcome__container--no-padding {
+      padding: 0; }
   .welcome__header {
     color: #9061C2;
     margin-top: 80px;
@@ -233,9 +235,27 @@
     color: #b4b4b4;
     margin: 0 40px;
     line-height: 1.7em; }
+  .welcome__button {
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-size: 12px;
+    color: white;
+    text-transform: uppercase;
+    background-color: #9061C2;
+    padding: 20px;
+    letter-spacing: 0.1em;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    margin-top: 10px;
+    cursor: pointer;
+    transition: 0.5s; }
+    .welcome__button:hover {
+      background-color: #121212; }
   .welcome__image {
     max-width: 100%;
-    margin-top: 20px; }
+    margin: 20px auto 0 auto;
+    display: block; }
 
 .about-restaurant {
   font-size: 0; }
@@ -802,5 +822,38 @@
     color: #b4b4b4;
     font-size: 15px;
     font-family: "Playfair Display", serif; }
+
+.photo {
+  position: relative; }
+  .photo__image {
+    background-image: url("http://uploads.webflow.com/57ea3312eaa002fa3bee3f81/57ecd7309b2f80520125c1eb_newSlider12.jpg");
+    background-size: cover;
+    height: 300px;
+    max-width: 100%; }
+  .photo__bg {
+    z-index: 2;
+    background-image: url("http://uploads.webflow.com/57ea3312eaa002fa3bee3f81/57ea528dfbbf45e84764f665_backg-2.png");
+    width: 100%;
+    position: absolute;
+    height: 300px; }
+  .photo__title {
+    z-index: 3;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    width: 90%; }
+  .photo__title-heading {
+    font-family: "Playball", cursive;
+    font-size: 50px;
+    font-weight: 500;
+    color: white;
+    text-transform: capitalize;
+    text-align: center;
+    margin-top: 10px; }
+    @media screen and (min-width: 768px) {
+      .photo__title-heading {
+        font-size: 80px; } }
 
 /*# sourceMappingURL=main.css.map */

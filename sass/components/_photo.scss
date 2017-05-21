@@ -1,0 +1,43 @@
+.photo {
+  position: relative;
+
+  &__image {
+    background-image: url("http://uploads.webflow.com/57ea3312eaa002fa3bee3f81/57ecd7309b2f80520125c1eb_newSlider12.jpg");
+    background-size: cover;
+    height: 300px;
+    max-width: 100%;
+  }
+
+  &__bg {
+    @include z-index(overlay);
+    background-image: url("http://uploads.webflow.com/57ea3312eaa002fa3bee3f81/57ea528dfbbf45e84764f665_backg-2.png");
+    width: 100%;
+    position: absolute;
+    height: 300px;
+  }
+
+  &__title {
+    @include z-index(slider-title);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    width: 90%;
+  }
+
+  &__title-heading {
+    font: {
+      family: $paragraph-font-family;
+      size: 50px;
+      weight: 500;
+    }
+    color: white;
+    text-transform: capitalize;
+    text-align: center;
+    margin-top: $common-padding/2;
+    @media screen and (min-width: 768px){
+      font-size: 80px;
+    }
+  }
+}
