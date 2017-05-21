@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Story</title>
+    <title>Risoto</title>
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Playball|Playfair+Display|Poppins|Poppins:500" rel="stylesheet">
     <link href="sass/main.css" rel="stylesheet" type="text/css">
@@ -17,8 +17,8 @@
         <button class="nav__button"><i class="fa fa-bars" aria-hidden="true"></i></button>
     </div>
     <ul class="nav__menu-list">
-        <li class="nav__menu-item"><a class="nav__menu-link " href="">home</a></li>
-        <li class="nav__menu-item  nav__menu-item--active"><a class="nav__menu-link" href="">story</a></li>
+        <li class="nav__menu-item nav__menu-item--active"><a class="nav__menu-link " href="">home</a></li>
+        <li class="nav__menu-item"><a class="nav__menu-link" href="">story</a></li>
         <li class="nav__menu-item"><a class="nav__menu-link" href="">menu</a></li>
         <li class="nav__menu-item"><a class="nav__menu-link" href="">news</a></li>
         <li class="nav__menu-item"><a class="nav__menu-link" href="">book a table</a></li>
@@ -27,38 +27,157 @@
 
 <div class="photo">
     <div class="photo__bg"></div>
-    <div class="photo__image photo__image--story"></div>
+    <div class="photo__image photo__image--menu"></div>
     <div class="photo__title">
         <h2 class="photo__title-heading">
-            our story
+            art of cooking
         </h2>
     </div>
 </div>
 
-<div class="welcome">
-    <div class="welcome__container welcome__container--no-padding">
-        <div class="welcome__text-wrapper">
-            <p class="welcome__header">welcome</p>
-            <h1 class="welcome__title">discover the story</h1>
-            <p class="welcome__info">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque dignissimos dolores et
-                facilis illum labore magnam, mollitia rem repellendus sed, sunt vitae.</p>
-            <button class="welcome__button">see our menu</button>
+<div class="restaurant-menu restaurant-menu--full-width">
+    <p class="restaurant-menu__header">chef recomends</p>
+    <h2 class="restaurant-menu__title">try our specialities</h2>
+    <div class="restaurant-menu__nav">
+        <div class="restaurant-menu__section menu-section" data-menu-nav-section="starters">
+            <img class="menu-section__img"
+                 src="http://uploads.webflow.com/57ea3312eaa002fa3bee3f81/57ebddc206f8c9724dc77a74_fruit.png"
+                 alt="starter">
+            <p class="menu-section__name">starters</p>
         </div>
-        <img class="welcome__image welcome__image--inline-block"
-             src="http://uploads.webflow.com/57ea3312eaa002fa3bee3f81/57efd0fce520177561f20e21_person.png"
-             alt="waiter">
+        <div class="restaurant-menu__section menu-section" data-menu-nav-section="dishes">
+            <img class="menu-section__img"
+                 src="http://uploads.webflow.com/57ea3312eaa002fa3bee3f81/57ebdfe006f8c9724dc783cd_pizza.png"
+                 alt="dishes">
+            <p class="menu-section__name">dishes</p>
+        </div>
+        <div class="restaurant-menu__section menu-section" data-menu-nav-section="deserts">
+            <img class="menu-section__img"
+                 src="http://uploads.webflow.com/57ea3312eaa002fa3bee3f81/57ebdff21117c47f4d98b273_ice-cream.png"
+                 alt="deserts">
+            <p class="menu-section__name">deserts</p>
+        </div>
+        <div class="restaurant-menu__section menu-section" data-menu-nav-section="drinks">
+            <img class="menu-section__img"
+                 src="http://uploads.webflow.com/57ea3312eaa002fa3bee3f81/57ebe030fbbf45e847696086_beer.png"
+                 alt="drinks">
+            <p class="menu-section__name">drinks</p>
+        </div>
     </div>
-</div>
 
-<div class="chefs">
-    <p class="chefs__header">we love what we do</p>
-    <h2 class="chefs__title">meet our chefs</h2>
-    <p class="chefs__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab commodi expedita iure laboriosam
-        laborum minus rem. Cumque facere fugiat maxime quas?</p>
-    <img class="chefs__image"
-         src="http://uploads.webflow.com/57ea3312eaa002fa3bee3f81/57ebecfa06f8c9724dc7b6a4_chefs.jpg" alt="our chefs">
-    <h2 class="chefs__slogan">quality & delicious food since 1910</h2>
+    <div class="restaurant-menu__contents">
+        <div class="restaurant-menu__proposition menu-proposition menu-proposition--active"
+             data-menu-section="starters">
+            <div class="menu-proposition__wrapper">
+                <div class="menu-proposition__title">
+                    <h3 class="menu-proposition__name">beef steak with broccoli</h3>
+                    <p class="menu-proposition__ingredients">Lorem ipsum dolor</p>
+                </div>
+                <p class="menu-proposition__kcal"><strong>120</strong> kcal</p>
+                <p class="menu-proposition__price">32 <strong>$</strong></p>
+            </div>
+            <div class="menu-proposition__wrapper">
+                <div class="menu-proposition__title">
+                    <h3 class="menu-proposition__name">crab cakes</h3>
+                    <p class="menu-proposition__ingredients">Lorem ipsum dolor</p>
+                </div>
+                <p class="menu-proposition__kcal"><strong>48</strong> kcal</p>
+                <p class="menu-proposition__price">14 <strong>$</strong></p>
+            </div>
+            <div class="menu-proposition__wrapper">
+                <div class="menu-proposition__title">
+                    <h3 class="menu-proposition__name">whitebait & dill mayo</h3>
+                    <p class="menu-proposition__ingredients">Lorem ipsum dolor</p>
+                </div>
+                <p class="menu-proposition__kcal"><strong>74</strong> kcal</p>
+                <p class="menu-proposition__price">8 <strong>$</strong></p>
+            </div>
+        </div>
+
+        <div class="restaurant-menu__proposition menu-proposition" data-menu-section="dishes">
+            <div class="menu-proposition__wrapper">
+                <div class="menu-proposition__title">
+                    <h3 class="menu-proposition__name">pumpkin spice cupcakes</h3>
+                    <p class="menu-proposition__ingredients">Lorem ipsum dolor</p>
+                </div>
+                <p class="menu-proposition__kcal"><strong>430</strong> kcal</p>
+                <p class="menu-proposition__price">49 <strong>$</strong></p>
+            </div>
+            <div class="menu-proposition__wrapper">
+                <div class="menu-proposition__title">
+                    <h3 class="menu-proposition__name">peanut blossoms</h3>
+                    <p class="menu-proposition__ingredients">Lorem ipsum dolor</p>
+                </div>
+                <p class="menu-proposition__kcal"><strong>980</strong> kcal</p>
+                <p class="menu-proposition__price">18 <strong>$</strong></p>
+            </div>
+            <div class="menu-proposition__wrapper">
+                <div class="menu-proposition__title">
+                    <h3 class="menu-proposition__name">apple crisp cups</h3>
+                    <p class="menu-proposition__ingredients">Lorem ipsum dolor</p>
+                </div>
+                <p class="menu-proposition__kcal"><strong>109</strong> kcal</p>
+                <p class="menu-proposition__price">8 <strong>$</strong></p>
+            </div>
+        </div>
+
+        <div class="restaurant-menu__proposition menu-proposition" data-menu-section="deserts">
+            <div class="menu-proposition__wrapper">
+                <div class="menu-proposition__title">
+                    <h3 class="menu-proposition__name">apple pie with ice creams</h3>
+                    <p class="menu-proposition__ingredients">Lorem ipsum dolor</p>
+                </div>
+                <p class="menu-proposition__kcal"><strong>120</strong> kcal</p>
+                <p class="menu-proposition__price">32 <strong>$</strong></p>
+            </div>
+            <div class="menu-proposition__wrapper">
+                <div class="menu-proposition__title">
+                    <h3 class="menu-proposition__name">crab cakes</h3>
+                    <p class="menu-proposition__ingredients">Lorem ipsum dolor</p>
+                </div>
+                <p class="menu-proposition__kcal"><strong>48</strong> kcal</p>
+                <p class="menu-proposition__price">14 <strong>$</strong></p>
+            </div>
+            <div class="menu-proposition__wrapper">
+                <div class="menu-proposition__title">
+                    <h3 class="menu-proposition__name">whitebait & dill mayo</h3>
+                    <p class="menu-proposition__ingredients">Lorem ipsum dolor</p>
+                </div>
+                <p class="menu-proposition__kcal"><strong>74</strong> kcal</p>
+                <p class="menu-proposition__price">8 <strong>$</strong></p>
+            </div>
+        </div>
+
+        <div class="restaurant-menu__proposition menu-proposition" data-menu-section="drinks">
+            <div class="menu-proposition__wrapper">
+                <div class="menu-proposition__title">
+                    <h3 class="menu-proposition__name">mojito perfecto</h3>
+                    <p class="menu-proposition__ingredients">Lorem ipsum dolor</p>
+                </div>
+                <p class="menu-proposition__kcal"><strong>139</strong> kcal</p>
+                <p class="menu-proposition__price">40 <strong>$</strong></p>
+            </div>
+            <div class="menu-proposition__wrapper">
+                <div class="menu-proposition__title">
+                    <h3 class="menu-proposition__name">sassy sangria</h3>
+                    <p class="menu-proposition__ingredients">Lorem ipsum dolor</p>
+                </div>
+                <p class="menu-proposition__kcal"><strong>48</strong> kcal</p>
+                <p class="menu-proposition__price">14 <strong>$</strong></p>
+            </div>
+            <div class="menu-proposition__wrapper">
+                <div class="menu-proposition__title">
+                    <h3 class="menu-proposition__name">creamy hot cocoa</h3>
+                    <p class="menu-proposition__ingredients">Lorem ipsum dolor</p>
+                </div>
+                <p class="menu-proposition__kcal"><strong>360</strong> kcal</p>
+                <p class="menu-proposition__price">4 <strong>$</strong></p>
+            </div>
+        </div>
+    </div>
+    <button class="restaurant-menu__button">view full menu</button>
 </div>
+<div class="clearfix"></div>
 
 <div class="gallery">
     <div class="gallery__image-wrapper">
@@ -168,6 +287,5 @@
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <script src="script.js"></script>
-
 </body>
 </html>

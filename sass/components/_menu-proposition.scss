@@ -1,4 +1,5 @@
 .menu-proposition {
+  @extend .container;
   position: absolute;
   opacity: 0;
   height: 700px;
@@ -23,7 +24,7 @@
 
     @include large-screen {
       display: inline-block;
-      width: 42%;
+      width: 50%;
       text-align: left;
       padding-bottom: $common-padding;
     }
@@ -62,13 +63,13 @@
     @include medium-screen {
       display: inline-block;
       width: 15%;
-      text-align: left;
+      text-align: right;
     }
 
     @include large-screen {
       display: inline-block;
       width: 15%;
-      text-align: left;
+      text-align: right;
     }
 
     & strong {
@@ -100,13 +101,13 @@
     @include medium-screen {
       display: inline-block;
       width: 15%;
-      text-align: left;
+      text-align: right;
     }
 
     @include large-screen {
       display: inline-block;
       width: 15%;
-      text-align: left;
+      text-align: right;
     }
   }
 

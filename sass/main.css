@@ -100,7 +100,7 @@
 .visible {
   transform: translateY(0); }
 
-.container, .nav__container, .nav__menu-item, .welcome__container {
+.container, .nav__container, .nav__menu-item, .welcome__container, .restaurant-menu__nav, .restaurant-menu__contents, .menu-proposition {
   max-width: 730px;
   margin: auto; }
 
@@ -371,6 +371,9 @@
     .restaurant-menu {
       float: left;
       width: 66%; } }
+  @media (min-width: 992px) {
+    .restaurant-menu--full-width {
+      width: 100%; } }
 
 .menu-proposition {
   position: absolute;
@@ -391,7 +394,7 @@
   @media (min-width: 992px) {
     .menu-proposition__title {
       display: inline-block;
-      width: 42%;
+      width: 50%;
       text-align: left;
       padding-bottom: 20px; } }
   .menu-proposition__name {
@@ -417,12 +420,12 @@
       .menu-proposition__kcal {
         display: inline-block;
         width: 15%;
-        text-align: left; } }
+        text-align: right; } }
     @media (min-width: 992px) {
       .menu-proposition__kcal {
         display: inline-block;
         width: 15%;
-        text-align: left; } }
+        text-align: right; } }
     .menu-proposition__kcal strong {
       font-family: "Playball", cursive;
       font-size: 17px;
@@ -441,12 +444,12 @@
       .menu-proposition__price {
         display: inline-block;
         width: 15%;
-        text-align: left; } }
+        text-align: right; } }
     @media (min-width: 992px) {
       .menu-proposition__price {
         display: inline-block;
         width: 15%;
-        text-align: left; } }
+        text-align: right; } }
   @media (min-width: 992px) {
     .menu-proposition {
       width: 65%; } }
@@ -845,10 +848,13 @@
 .photo {
   position: relative; }
   .photo__image {
-    background-image: url("http://uploads.webflow.com/57ea3312eaa002fa3bee3f81/57ecd7309b2f80520125c1eb_newSlider12.jpg");
     background-size: cover;
     height: 300px;
     max-width: 100%; }
+    .photo__image--story {
+      background-image: url("http://uploads.webflow.com/57ea3312eaa002fa3bee3f81/57ecd7309b2f80520125c1eb_newSlider12.jpg"); }
+    .photo__image--menu {
+      background-image: url("http://uploads.webflow.com/57ea3312eaa002fa3bee3f81/57ebc4c44c12cc233cbcf428_photo-5.jpg"); }
     @media (min-width: 480px) and (max-width: 767px) {
       .photo__image {
         background-attachment: fixed; } }
