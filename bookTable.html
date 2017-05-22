@@ -36,22 +36,150 @@
 </div>
 
 <div class="welcome">
-    <div class="welcome__container">
+    <div class="welcome__container welcome__container--no-padding">
         <p class="welcome__header">book now!</p>
         <h1 class="welcome__title">make a reservation</h1>
     </div>
 </div>
 
-<form class="bookATable">
-    <input class="bookATable__name" type="text" placeholder="First Name">
-    <input class="bookATable__last-name" type="text" placeholder="Last Name">
-    <input class="bookATable__phone" type="text" placeholder="Phone">
-    <input class="bookATable__email" type="email" placeholder="Email">
-    <input class="bookATable__guests" type="number" placeholder="Number of Guests">
-    <p class="bookATable__date">date of reservation (not available saturday or sunday brunch)*</p>
-
+<form class="book-a-table">
+    <input class="book-a-table__input" type="text" placeholder="First Name">
+    <input class="book-a-table__input" type="text" placeholder="Last Name">
+    <input class="book-a-table__input" type="text" placeholder="Phone">
+    <input class="book-a-table__input" type="email" placeholder="Email">
+    <input class="book-a-table__input" type="number" placeholder="Number of Guests">
+    <p class="book-a-table__info">date of reservation (not available saturday or sunday brunch)*</p>
+    <div class="book-a-table__date">
+        <input class="book-a-table__input book-a-table__input--inline-block" type="number" placeholder="DD">
+        <input class="book-a-table__input book-a-table__input--inline-block" type="number" placeholder="MM">
+        <input class="book-a-table__input book-a-table__input--inline-block" type="number" placeholder="YY">
+    </div>
+    <textarea class="book-a-table__input" placeholder="Detailed Message" rows="5"></textarea>
+    <button class="book-a-table__button" type="submit">book now</button>
 </form>
 
+<div class="opening-hours">
+    <h2 class="opening-hours__title">opening hours</h2>
+    <ul class="opening-hours__list">
+        <li class="opening-hours__list-item">monday<strong>12am -10pm</strong></li>
+        <li class="opening-hours__list-item">tuesday<strong>12am -10pm</strong></li>
+        <li class="opening-hours__list-item">wednesday<strong>12am -10pm</strong></li>
+        <li class="opening-hours__list-item">thursday<strong>12am -10pm</strong></li>
+        <li class="opening-hours__list-item">friday<strong>12am -10pm</strong></li>
+        <li class="opening-hours__list-item">saturday<strong>12am -8pm</strong></li>
+        <li class="opening-hours__list-item">sunday<strong>closed</strong></li>
+    </ul>
+    <button class="opening-hours__button">book a table</button>
+</div>
+<div class="clearfix"></div>
 
+<div class="gallery">
+    <div class="gallery__image-wrapper">
+        <img class="gallery__image" src="http://uploads.webflow.com/57ea3312eaa002fa3bee3f81/57ed18dc81729e3401425c7b_food-1.jpg" alt="yogurt with blackberries">
+        <div class="gallery__icon"></div>
+    </div>
+    <div class="gallery__image-wrapper">
+        <img class="gallery__image gallery__image--bigger" src="http://uploads.webflow.com/57ea3312eaa002fa3bee3f81/57ed1a369b2f805201266fb1_food-3.jpg" alt="broccoli tart">
+        <div class="gallery__icon"></div>
+    </div>
+    <div class="gallery__image-wrapper">
+        <img class="gallery__image" src="http://uploads.webflow.com/57ea3312eaa002fa3bee3f81/57ed1a7981729e3401426500_food-2.jpg" alt="muesli">
+        <div class="gallery__icon"></div>
+    </div>
+    <div class="gallery__image-wrapper">
+        <img class="gallery__image" src="http://uploads.webflow.com/57ea3312eaa002fa3bee3f81/57ed21d881729e3401427c38_food-4.jpg" alt="salmon">
+        <div class="gallery__icon"></div>
+    </div>
+    <div class="gallery__image-wrapper">
+        <img class="gallery__image" src="http://uploads.webflow.com/57ea3312eaa002fa3bee3f81/57ed2221cb65fa8c183d8193_food-5.jpg" alt="hamburger">
+        <div class="gallery__icon"></div>
+    </div>
+    <div class="gallery__image-wrapper">
+        <img class="gallery__image" src="http://uploads.webflow.com/57ea3312eaa002fa3bee3f81/57ed22c69b2f805201268adf_food-big-6.jpg" alt="pizza">
+        <div class="gallery__icon"></div>
+    </div>
+    <div class="gallery__modal">
+        <div class="gallery__modal-content">
+            <div class="gallery__modal-close">&#10005</div>
+            <div class="gallery__modal-wrapper" data-image-number="1">
+                <img class="gallery__modal-image" src="https://daks2k3a4ib2z.cloudfront.net/57ea3312eaa002fa3bee3f81/57ed16edcbbbb20f0c08381e_food-big-1.jpg" alt="yogurt with blackberries">
+            </div>
+            <div class="gallery__modal-wrapper" data-image-number="2">
+                <img class="gallery__modal-image" src="https://daks2k3a4ib2z.cloudfront.net/57ea3312eaa002fa3bee3f81/57ed1a4d81729e34014264fa_food-big-3.jpg" alt="broccoli tart">
+            </div>
+            <div class="gallery__modal-wrapper" data-image-number="3">
+                <img class="gallery__modal-image" src="https://daks2k3a4ib2z.cloudfront.net/57ea3312eaa002fa3bee3f81/57ed1a9081729e340142650c_food-big-2.jpg" alt="muesli">
+            </div>
+            <div class="gallery__modal-wrapper" data-image-number="4">
+                <img class="gallery__modal-image" src="https://daks2k3a4ib2z.cloudfront.net/57ea3312eaa002fa3bee3f81/57ed21eaaf9d15040c52d43d_food-big-4.jpg" alt="salmon">
+            </div>
+            <div class="gallery__modal-wrapper" data-image-number="5">
+                <img class="gallery__modal-image" src="https://daks2k3a4ib2z.cloudfront.net/57ea3312eaa002fa3bee3f81/57ed223381729e3401427e79_food-big-5.jpg" alt="hamburger">
+            </div>
+            <div class="gallery__modal-wrapper" data-image-number="6">
+                <img class="gallery__modal-image" src="https://daks2k3a4ib2z.cloudfront.net/57ea3312eaa002fa3bee3f81/57ed22f29b2f805201268b18_food-big-6.jpg" alt="pizza">
+            </div>
+            <div class="gallery__slider-wrapper">
+                <div class="gallery__slider">
+                    <div class="gallery__slide">
+                        <img class="gallery__slide-image" src="http://uploads.webflow.com/57ea3312eaa002fa3bee3f81/57ed18dc81729e3401425c7b_food-1.jpg" alt="yogurt with blackberries">
+                    </div>
+                    <div class="gallery__slide">
+                        <img class="gallery__slide-image" src="http://uploads.webflow.com/57ea3312eaa002fa3bee3f81/57ed1a369b2f805201266fb1_food-3.jpg" alt="broccoli tart">
+                    </div>
+                    <div class="gallery__slide">
+                        <img class="gallery__slide-image" src="http://uploads.webflow.com/57ea3312eaa002fa3bee3f81/57ed1a7981729e3401426500_food-2.jpg" alt="muesli">
+                    </div>
+                    <div class="gallery__slide">
+                        <img class="gallery__slide-image" src="http://uploads.webflow.com/57ea3312eaa002fa3bee3f81/57ed21d881729e3401427c38_food-4.jpg" alt="salmon">
+                    </div>
+                    <div class="gallery__slide">
+                        <img class="gallery__slide-image" src="http://uploads.webflow.com/57ea3312eaa002fa3bee3f81/57ed2221cb65fa8c183d8193_food-5.jpg" alt="hamburger">
+                    </div>
+                    <div class="gallery__slide">
+                        <img class="gallery__slide-image gallery__slide-image--6" src="http://uploads.webflow.com/57ea3312eaa002fa3bee3f81/57ed22c69b2f805201268adf_food-big-6.jpg" alt="pizza">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="footer">
+    <img class="footer__logo"
+         src="http://uploads.webflow.com/57ea3312eaa002fa3bee3f81/57ea36574c12cc233cb843d1_logo-w.png" alt="logo">
+    <div class="footer__socials">
+        <p class="footer__socials-text">follow us:</p>
+        <div class="footer__socials-item"><a class="footer__socials-link" target="_blank" href="https://www.facebook.com/"><i class="fa fa-facebook" aria-hidden="true"></i></a></div>
+        <div class="footer__socials-item"><a class="footer__socials-link" target="_blank" href="https://twitter.com/"><i class="fa fa-twitter" aria-hidden="true"></i></a></div>
+        <div class="footer__socials-item"><a class="footer__socials-link" target="_blank" href="https://plus.google.com/"><i class="fa fa-google-plus" aria-hidden="true"></i></a></div>
+        <div class="footer__socials-item"><a class="footer__socials-link" target="_blank" href="https://www.instagram.com/"><i class="fa fa-instagram" aria-hidden="true"></i></a></div>
+    </div>
+    <form class="footer__form">
+        <input class="footer__form-input" type="email" name="email" placeholder="Enter your email address">
+        <button class="footer__form-button" type="submit" name="submit">subscribe</button>
+        <div class="clearfix"></div>
+    </form>
+
+    <div class="footer__icons">
+        <div class="footer__icons-wrapper">
+            <img class="footer__icons-item" src="http://uploads.webflow.com/57ea3312eaa002fa3bee3f81/57ffa40c6422e951589ec5b9_phone-call%20(4).png" alt="phone">
+            <p class="footer__icons-text">+1 458 256 9878</p>
+        </div>
+        <div class="footer__icons-wrapper">
+            <img class="footer__icons-item" src="http://uploads.webflow.com/57ea3312eaa002fa3bee3f81/57ffa44c777cf73d2546791d_placeholder%20(1).png" alt="marker">
+            <p class="footer__icons-text">350 Fourth Avenue,<br>34th floor New York, USA</p>
+        </div>
+        <div class="footer__icons-wrapper">
+            <img class="footer__icons-item" src="http://uploads.webflow.com/57ea3312eaa002fa3bee3f81/57ffa45a2df9a4bb41f9edc0_envelope%20(1).png" alt="envelope">
+            <p class="footer__icons-text">email@risoto.com</p>
+        </div>
+    </div>
+</div>
+<div class="copyrights">
+    <p class="copyrights__text">&copy; 2016 RisotoCMS by Albor Bozo</p>
+</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="script.js"></script>
 </body>
 </html>

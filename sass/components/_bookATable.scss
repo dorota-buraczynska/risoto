@@ -1,0 +1,74 @@
+.book-a-table {
+  margin: $common-padding*2;
+  text-align: center;
+
+  &__input {
+    width: 100%;
+    margin: $common-padding/5 0;
+    padding: $common-padding;
+    border-radius: $border-radius;
+    background-color: $form-input-color;
+    outline: none;
+    border: none;
+    font: {
+      size: 14px;
+      family: $body-font-family;
+    }
+
+    &::placeholder {
+      color: $text-color;
+    }
+
+    &:focus {
+      background-color: $form-input-selected-color;
+    }
+
+    &--inline-block {
+      display: inline-block;
+      width: 74px;
+      margin-right: $common-padding/2;
+
+      @include small-medium-large {
+        width: 115px;
+      }
+    }
+  }
+
+  &__info {
+    font: {
+      size: 15px;
+      family: $body-font-family;
+      style: italic;
+    }
+    text-transform: capitalize;
+    color: $text-color;
+    margin: $common-padding 0;
+  }
+
+  &__date {
+    text-align: left;
+  }
+
+  &__button {
+    font: {
+      family: $header-font-family;
+      weight: 500;
+      size: 12px;
+    }
+    color: white;
+    text-transform: uppercase;
+    background-color: $main-color;
+    padding: $common-padding;
+    letter-spacing: 0.1em;
+    border-radius: $border-radius;
+    border: none;
+    outline: none;
+    margin-top: $common-padding/2;
+    cursor: pointer;
+    transition: 0.5s;
+
+    &:hover {
+      background-color: $header-color;
+    }
+  }
+}
