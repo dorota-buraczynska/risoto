@@ -17,11 +17,11 @@
         <button class="nav__button"><i class="fa fa-bars" aria-hidden="true"></i></button>
     </div>
     <ul class="nav__menu-list">
-        <li class="nav__menu-item nav__menu-item--active"><a class="nav__menu-link " href="index.html">home</a></li>
+        <li class="nav__menu-item"><a class="nav__menu-link " href="index.html">home</a></li>
         <li class="nav__menu-item"><a class="nav__menu-link" href="story.html">story</a></li>
         <li class="nav__menu-item"><a class="nav__menu-link" href="menu.html">menu</a></li>
         <li class="nav__menu-item"><a class="nav__menu-link" href="news.html">news</a></li>
-        <li class="nav__menu-item"><a class="nav__menu-link" href="">book a table</a></li>
+        <li class="nav__menu-item  nav__menu-item--active"><a class="nav__menu-link" href="bookTable.html">book a table</a></li>
     </ul>
 </nav>
 
@@ -35,43 +35,47 @@
     </div>
 </div>
 
-<div class="welcome">
-    <div class="welcome__container welcome__container--no-padding">
-        <p class="welcome__header">book now!</p>
-        <h1 class="welcome__title">make a reservation</h1>
-    </div>
-</div>
+<div class="container-with-sidebar">
+    <div class="container-with-sidebar__main">
+        <div class="welcome welcome--no-background">
+            <div class="welcome__container welcome__container--no-padding">
+                <p class="welcome__header">book now!</p>
+                <h1 class="welcome__title">make a reservation</h1>
+            </div>
+        </div>
 
-<form class="book-a-table">
-    <input class="book-a-table__input" type="text" placeholder="First Name">
-    <input class="book-a-table__input" type="text" placeholder="Last Name">
-    <input class="book-a-table__input" type="text" placeholder="Phone">
-    <input class="book-a-table__input" type="email" placeholder="Email">
-    <input class="book-a-table__input" type="number" placeholder="Number of Guests">
-    <p class="book-a-table__info">date of reservation (not available saturday or sunday brunch)*</p>
-    <div class="book-a-table__date">
-        <input class="book-a-table__input book-a-table__input--inline-block" type="number" placeholder="DD">
-        <input class="book-a-table__input book-a-table__input--inline-block" type="number" placeholder="MM">
-        <input class="book-a-table__input book-a-table__input--inline-block" type="number" placeholder="YY">
+        <form class="book-a-table">
+            <input class="book-a-table__input book-a-table__input--inline-block" type="text" placeholder="First Name">
+            <input class="book-a-table__input book-a-table__input--inline-block" type="text" placeholder="Last Name">
+            <input class="book-a-table__input book-a-table__input--inline-block" type="text" placeholder="Phone">
+            <input class="book-a-table__input book-a-table__input--inline-block" type="email" placeholder="Email">
+            <input class="book-a-table__input" type="number" placeholder="Number of Guests">
+            <p class="book-a-table__info">date of reservation (not available saturday or sunday brunch)*</p>
+            <div class="book-a-table__date">
+                <input class="book-a-table__date-input" type="number" placeholder="DD">
+                <input class="book-a-table__date-input" type="number" placeholder="MM">
+                <input class="book-a-table__date-input" type="number" placeholder="YY">
+            </div>
+            <textarea class="book-a-table__input" placeholder="Detailed Message" rows="5"></textarea>
+            <button class="book-a-table__button" type="submit">book now</button>
+        </form>
     </div>
-    <textarea class="book-a-table__input" placeholder="Detailed Message" rows="5"></textarea>
-    <button class="book-a-table__button" type="submit">book now</button>
-</form>
 
-<div class="opening-hours">
-    <h2 class="opening-hours__title">opening hours</h2>
-    <ul class="opening-hours__list">
-        <li class="opening-hours__list-item">monday<strong>12am -10pm</strong></li>
-        <li class="opening-hours__list-item">tuesday<strong>12am -10pm</strong></li>
-        <li class="opening-hours__list-item">wednesday<strong>12am -10pm</strong></li>
-        <li class="opening-hours__list-item">thursday<strong>12am -10pm</strong></li>
-        <li class="opening-hours__list-item">friday<strong>12am -10pm</strong></li>
-        <li class="opening-hours__list-item">saturday<strong>12am -8pm</strong></li>
-        <li class="opening-hours__list-item">sunday<strong>closed</strong></li>
-    </ul>
-    <button class="opening-hours__button">book a table</button>
+    <div class="opening-hours container-with-sidebar__sidebar">
+        <h2 class="opening-hours__title">opening hours</h2>
+        <ul class="opening-hours__list">
+            <li class="opening-hours__list-item">monday<strong>12am -10pm</strong></li>
+            <li class="opening-hours__list-item">tuesday<strong>12am -10pm</strong></li>
+            <li class="opening-hours__list-item">wednesday<strong>12am -10pm</strong></li>
+            <li class="opening-hours__list-item">thursday<strong>12am -10pm</strong></li>
+            <li class="opening-hours__list-item">friday<strong>12am -10pm</strong></li>
+            <li class="opening-hours__list-item">saturday<strong>12am -8pm</strong></li>
+            <li class="opening-hours__list-item">sunday<strong>closed</strong></li>
+        </ul>
+        <button class="opening-hours__button">book a table</button>
+    </div>
+    <div class="clearfix"></div>
 </div>
-<div class="clearfix"></div>
 
 <div class="gallery">
     <div class="gallery__image-wrapper">

@@ -1,0 +1,17 @@
+.container-with-sidebar {
+  @include large-screen {
+    font-size: 0;
+    height: 806px;
+
+    &__main {
+      display: inline-block;
+      width: 66.666%;
+    }
+
+    &__sidebar {
+      display: inline-block;
+      width: 33.333%;
+    }
+  }
+
+}

@@ -1007,13 +1007,15 @@
       color: #b4b4b4; }
     .book-a-table__input:focus {
       background-color: #DADADA; }
-    .book-a-table__input--inline-block {
-      display: inline-block;
-      width: 74px;
-      margin-right: 10px; }
-      @media (min-width: 480px) {
-        .book-a-table__input--inline-block {
-          width: 115px; } }
+    @media (min-width: 768px) and (max-width: 991px) {
+      .book-a-table__input--inline-block {
+        display: inline-block;
+        width: 49.7%; } }
+    @media (min-width: 992px) {
+      .book-a-table__input--inline-block {
+        display: inline-block;
+        width: 49.4%;
+        margin-right: 5px; } }
   .book-a-table__info {
     font-size: 15px;
     font-family: "Playfair Display", serif;
@@ -1023,6 +1025,24 @@
     margin: 20px 0; }
   .book-a-table__date {
     text-align: left; }
+  .book-a-table__date-input {
+    display: inline-block;
+    width: 74px;
+    margin: 4px 0 4px 10px;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #e8ebee;
+    outline: none;
+    border: none;
+    font-size: 14px;
+    font-family: "Playfair Display", serif; }
+    .book-a-table__date-input::placeholder {
+      color: #b4b4b4; }
+    .book-a-table__date-input:focus {
+      background-color: #DADADA; }
+    @media (min-width: 480px) {
+      .book-a-table__date-input {
+        width: 115px; } }
   .book-a-table__button {
     font-family: "Poppins", sans-serif;
     font-weight: 500;
@@ -1040,5 +1060,16 @@
     transition: 0.5s; }
     .book-a-table__button:hover {
       background-color: #121212; }
+
+@media (min-width: 992px) {
+  .container-with-sidebar {
+    font-size: 0;
+    height: 806px; }
+    .container-with-sidebar__main {
+      display: inline-block;
+      width: 66.666%; }
+    .container-with-sidebar__sidebar {
+      display: inline-block;
+      width: 33.333%; } }
 
 /*# sourceMappingURL=main.css.map */

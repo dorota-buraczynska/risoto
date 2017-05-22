@@ -23,15 +23,22 @@
       background-color: $form-input-selected-color;
     }
 
-    &--inline-block {
-      display: inline-block;
-      width: 74px;
-      margin-right: $common-padding/2;
-
-      @include small-medium-large {
-        width: 115px;
+    @include medium-screen {
+      &--inline-block {
+        display: inline-block;
+        width: 49.7%;
       }
     }
+
+    @include large-screen {
+      &--inline-block {
+        display: inline-block;
+        width: 49.4%;
+        margin-right: $common-padding/4;
+      }
+    }
+
+
   }
 
   &__info {
@@ -47,6 +54,33 @@
 
   &__date {
     text-align: left;
+  }
+
+  &__date-input {
+    display: inline-block;
+    width: 74px;
+    margin: $common-padding/5 0 $common-padding/5 $common-padding/2;
+    padding: $common-padding;
+    border-radius: $border-radius;
+    background-color: $form-input-color;
+    outline: none;
+    border: none;
+    font: {
+      size: 14px;
+      family: $body-font-family;
+    }
+
+    &::placeholder {
+      color: $text-color;
+    }
+
+    &:focus {
+      background-color: $form-input-selected-color;
+    }
+
+    @include small-medium-large {
+      width: 115px;
+    }
   }
 
   &__button {
@@ -71,4 +105,5 @@
       background-color: $header-color;
     }
   }
+
 }
