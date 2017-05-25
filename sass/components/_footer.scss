@@ -57,18 +57,6 @@
     max-width: 100%;
   }
 
-  &__form {
-    @include medium-screen {
-      width: 550px;
-      margin: auto;
-    }
-
-    @include large-screen {
-      width: 550px;
-      margin: auto;
-    }
-  }
-
   &__form-input {
     width: 100%;
     margin: $common-padding/2 0;
@@ -81,20 +69,6 @@
     outline: none;
     border: none;
     background-color: $footer-input-bg-color;
-
-    @include medium-screen {
-      float: left;
-      width: 400px;
-      margin: 0;
-      border-radius: $common-padding/4 0 0 $common-padding/4;
-    }
-
-    @include  large-screen {
-      float: left;
-      width: 400px;
-      margin: 0;
-      border-radius: $common-padding/4 0 0 $common-padding/4;
-    }
   }
 
   &__form-button {
@@ -115,34 +89,8 @@
     cursor: pointer;
     transition: 1s;
 
-    @include medium-screen {
-      width: 150px;
-      float: left;
-      border-radius: 0 $common-padding/4 $common-padding/4 0;
-    }
-
-    @include  large-screen {
-      width: 150px;
-      float: left;
-      border-radius: 0 $common-padding/4 $common-padding/4 0;
-    }
-
     &:hover {
       background-color: $header-color;
-    }
-  }
-
-  &__icons-wrapper {
-    @include  medium-screen {
-      display: inline-block;
-      width: 32%;
-      vertical-align: top;
-    }
-
-    @include large-screen {
-      display: inline-block;
-      width: 15%;
-      vertical-align: top;
     }
   }
 
@@ -158,5 +106,57 @@
       size: 17px;
       family: $body-font-family;
     }
+  }
+}
+
+@mixin footer--md() {
+  .footer__form {
+    width: 550px;
+    margin: auto;
+  }
+
+  .footer__form-input {
+    float: left;
+    width: 400px;
+    margin: 0;
+    border-radius: $common-padding/4 0 0 $common-padding/4;
+  }
+
+  .footer__form-button {
+    width: 150px;
+    float: left;
+    border-radius: 0 $common-padding/4 $common-padding/4 0;
+  }
+
+  .footer__icons-wrapper {
+    display: inline-block;
+    width: 32%;
+    vertical-align: top;
+  }
+}
+
+@mixin footer--lg() {
+  .footer__form {
+    width: 550px;
+    margin: auto;
+  }
+
+  .footer__form-input {
+    float: left;
+    width: 400px;
+    margin: 0;
+    border-radius: $common-padding/4 0 0 $common-padding/4;
+  }
+
+  .footer__form-button {
+    width: 150px;
+    float: left;
+    border-radius: 0 $common-padding/4 $common-padding/4 0;
+  }
+
+  .footer__icons-wrapper {
+    display: inline-block;
+    width: 15%;
+    vertical-align: top;
   }
 }

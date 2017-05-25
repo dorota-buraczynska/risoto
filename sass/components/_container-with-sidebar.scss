@@ -1,17 +1,14 @@
-.container-with-sidebar {
-  @include large-screen {
+@mixin container-with-sidebar--lg() {
+  .container-with-sidebar {
     font-size: 0;
     height: 806px;
-
-    &__main {
-      display: inline-block;
-      width: 66.666%;
-    }
-
-    &__sidebar {
-      display: inline-block;
-      width: 33.333%;
-    }
   }
-
+  .container-with-sidebar__main {
+    display: inline-block;
+    width: 66.666%;
+  }
+  .container-with-sidebar__sidebar {
+    display: inline-block;
+    width: 33.333%;
+  }
 }

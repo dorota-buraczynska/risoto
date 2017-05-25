@@ -77,8 +77,10 @@
       color: white;
     }
   }
+}
 
-  @include large-screen {
+@mixin opening-hours--lg() {
+  .opening-hours {
     float: right;
     width: 34%;
     vertical-align: top;

@@ -13,23 +13,6 @@
     border-bottom: 1px dashed rgba(180, 180, 180, 0.24);
   }
 
-  &__title {
-    @include medium-screen {
-      display: inline-block;
-      width: 50%;
-      text-align: left;
-      margin-left: $common-padding*2;
-      padding-bottom: $common-padding;
-    }
-
-    @include large-screen {
-      display: inline-block;
-      width: 50%;
-      text-align: left;
-      padding-bottom: $common-padding;
-    }
-  }
-
   &__name {
     font: {
       family: $header-font-family;
@@ -60,18 +43,6 @@
     color: $text-color;
     text-transform: capitalize;
 
-    @include medium-screen {
-      display: inline-block;
-      width: 15%;
-      text-align: right;
-    }
-
-    @include large-screen {
-      display: inline-block;
-      width: 15%;
-      text-align: right;
-    }
-
     & strong {
       font: {
         family: $paragraph-font-family;
@@ -97,21 +68,52 @@
         size: 16px;
       }
     }
+  }
+}
 
-    @include medium-screen {
-      display: inline-block;
-      width: 15%;
-      text-align: right;
-    }
-
-    @include large-screen {
-      display: inline-block;
-      width: 15%;
-      text-align: right;
-    }
+@mixin menu-proposition--md() {
+  .menu-proposition__title {
+    display: inline-block;
+    width: 50%;
+    text-align: left;
+    margin-left: $common-padding*2;
+    padding-bottom: $common-padding;
   }
 
-  @include large-screen {
+  .menu-proposition__kcal {
+    display: inline-block;
+    width: 15%;
+    text-align: right;
+  }
+
+  .menu-proposition__price {
+    display: inline-block;
+    width: 15%;
+    text-align: right;
+  }
+}
+
+@mixin menu-proposition--lg() {
+  .menu-proposition {
     width: 65%;
+  }
+
+  .menu-proposition__title {
+    display: inline-block;
+    width: 50%;
+    text-align: left;
+    padding-bottom: $common-padding;
+  }
+
+  .menu-proposition__kcal {
+    display: inline-block;
+    width: 15%;
+    text-align: right;
+  }
+
+  .menu-proposition__price {
+    display: inline-block;
+    width: 15%;
+    text-align: right;
   }
 }

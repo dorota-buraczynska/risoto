@@ -31,10 +31,6 @@
     margin: $common-padding/2;
     filter: grayscale(1);
     opacity: 0.5;
-
-    @include large-screen {
-      margin: 0;
-    }
   }
 
   &__name {
@@ -48,22 +44,30 @@
     color: $text-color;
     text-transform: capitalize;
     margin: $common-padding;
-
-    @include large-screen {
-      margin: $common-padding 0 $common-padding*1.5 0;
-    }
   }
+}
 
-  @include medium-screen {
+@mixin menu-section--md() {
+  .menu-section {
     margin: $common-padding 0;
     width: 140px;
     display: inline-block;
   }
+}
 
-  @include large-screen {
+@mixin menu-section--lg() {
+  .menu-section {
     margin: 0;
     display: inline-block;
     width: 18%;
     padding: 0;
+  }
+
+  .menu-section__img {
+    margin: 0;
+  }
+
+  .menu-section__name {
+    margin: $common-padding 0 $common-padding*1.5 0;
   }
 }

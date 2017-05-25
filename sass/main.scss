@@ -1,5 +1,6 @@
 @import "variables";
 @import "mixins";
+
 @import "base";
 @import "components/nav";
 @import "placeholders";
@@ -19,3 +20,4 @@
 @import "components/news";
 @import "components/bookATable";
 @import "components/container-with-sidebar";
+@import "media-queries";

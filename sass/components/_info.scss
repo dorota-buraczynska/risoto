@@ -24,9 +24,10 @@
     line-height: $line-height;
 
   }
+}
 
-
-  @include large-screen {
+@mixin info--lg() {
+  .info {
     display: inline-block;
     width: 33%;
     margin:0;

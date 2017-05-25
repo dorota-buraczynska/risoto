@@ -1,0 +1,40 @@
+//smal screen size (sm)
+@media (min-width: #{$small-screen}) and (max-width: #{$medium-screen - 1px}) {
+  @include book-a-table--sm();
+  @include news-sm();
+  @include photos--sm();
+  @include welcome--sm();
+}
+
+//medium screen size (md)
+@media (min-width: #{$medium-screen}) and (max-width: #{$large-screen - 1px}) {
+  @include book-a-table--md();
+  @include footer--md();
+  @include gallery--md();
+  @include menu-proposition--md();
+  @include menu-section--md();
+  @include news--md();
+  @include photos--md();
+  @include restaurant-menu--md();
+  @include slider--md();
+  @include welcome--md();
+}
+
+//large screen size (lg)
+@media (min-width: #{$large-screen}) {
+  @include book-a-table--lg();
+  @include container-with-sidebar--lg();
+  @include footer--lg();
+  @include about-restaurant--lg();
+  @include gallery--lg();
+  @include info--lg();
+  @include menu-proposition--lg();
+  @include menu-section--lg();
+  @include nav--lg();
+  @include news--lg();
+  @include opening-hours--lg();
+  @include photos--lg();
+  @include restaurant-menu--lg();
+  @include slider--lg();
+  @include welcome--lg();
+}

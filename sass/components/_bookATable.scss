@@ -22,23 +22,6 @@
     &:focus {
       background-color: $form-input-selected-color;
     }
-
-    @include medium-screen {
-      &--inline-block {
-        display: inline-block;
-        width: 49.7%;
-      }
-    }
-
-    @include large-screen {
-      &--inline-block {
-        display: inline-block;
-        width: 49.4%;
-        margin-right: $common-padding/4;
-      }
-    }
-
-
   }
 
   &__info {
@@ -77,10 +60,6 @@
     &:focus {
       background-color: $form-input-selected-color;
     }
-
-    @include small-medium-large {
-      width: 115px;
-    }
   }
 
   &__button {
@@ -106,4 +85,30 @@
     }
   }
 
+}
+@mixin book-a-table--sm() {
+  .book-a-table__date-input {
+    width: 115px;
+  }
+}
+
+@mixin book-a-table--md() {
+  .book-a-table__input--inline-block {
+    display: inline-block;
+    width: 49.7%;
+  }
+  .book-a-table__date-input {
+    width: 115px;
+  }
+}
+
+@mixin book-a-table--lg() {
+  .book-a-table__input--inline-block {
+    display: inline-block;
+    width: 49.4%;
+    margin-right: $common-padding/4;
+  }
+  .book-a-table__date-input {
+    width: 115px;
+  }
 }

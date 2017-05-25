@@ -21,10 +21,6 @@
     &--active {
       opacity: 1;
     }
-
-    @include large-screen {
-      height: 1075px;
-    }
   }
 
   &__button {
@@ -70,10 +66,6 @@
     left: 0;
     top: 0;
     height: 100%;
-
-    @include large-screen {
-      background-size: cover;
-    }
   }
 
   &__title {
@@ -100,9 +92,6 @@
     text-transform: capitalize;
     text-align: center;
     margin-top: $common-padding/2;
-    @media screen and (min-width: 768px){
-      font-size: 80px;
-    }
   }
 
   &__title-button {
@@ -121,8 +110,28 @@
     border-radius: $border-radius;
     letter-spacing: 0.1rem;
   }
+}
 
-  @include large-screen {
+@mixin slider--md() {
+  .slider__title-heading {
+    font-size: 80px;
+  }
+}
+
+@mixin slider--lg() {
+  .slider {
     height: 850px;
+  }
+
+  .slider__item {
+    height: 1075px;
+  }
+
+  .slider__bg {
+    background-size: cover;
+  }
+
+  .slider__title-heading {
+    font-size: 80px;
   }
 }
