@@ -78,6 +78,7 @@
     text-decoration: none;
     color: $menu-color;
     text-transform: capitalize;
+    padding-right: $common-padding * 20;
     font: {
       family: $header-font-family;
       size: 14px;

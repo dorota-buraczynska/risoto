@@ -96,7 +96,6 @@
 
   &__title-button {
     text-transform: uppercase;
-    color: white;
     background-color: $main-color;
     border: none;
     outline: none;
@@ -109,6 +108,12 @@
     margin-top: $common-padding;
     border-radius: $border-radius;
     letter-spacing: 0.1rem;
+  }
+
+  &__title-link {
+    text-decoration: none;
+    color: white;
+    padding: $common-padding 0;
   }
 }
 

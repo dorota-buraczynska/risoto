@@ -57,7 +57,6 @@
     background-color: white;
     border: none;
     outline: none;
-    color: $main-color;
     padding: $common-padding;
     margin-top: $common-padding;
     margin-bottom: $common-padding*7;
@@ -76,6 +75,16 @@
       background-color: $header-color;
       color: white;
     }
+
+    &--hidden {
+      visibility: hidden;
+    }
+  }
+
+  &__link {
+    text-decoration: none;
+    color: $main-color;
+    padding:$common-padding 0;
   }
 }
 

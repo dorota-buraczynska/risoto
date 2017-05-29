@@ -38,12 +38,12 @@
   }
 
   &__button {
+    @include z-index(base);
     font: {
       family: $header-font-family;
       weight: 500;
       size: 12px;
     }
-    color: white;
     text-transform: uppercase;
     background-color: $main-color;
     padding: $common-padding;
@@ -55,10 +55,17 @@
     margin-bottom: $common-padding*4;
     cursor: pointer;
     transition: 0.5s;
+    position: relative;
 
     &:hover {
       background-color: $header-color;
     }
+  }
+
+  &__link {
+    color: white;
+    text-decoration: none;
+    padding: $common-padding 0;
   }
 
   &--bottom-padding {
