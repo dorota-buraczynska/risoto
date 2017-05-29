@@ -906,13 +906,27 @@
     display: inline-block;
     width: 50%; } }
 @media (min-width: 992px) {
+  .book-a-table {
+    text-align: left;
+    margin-left: 120px; }
+
+  .book-a-table__button {
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%); }
+
+  .book-a-table__input {
+    width: 90.4%; }
+
   .book-a-table__input--inline-block {
     display: inline-block;
-    width: 49.4%;
+    width: 45%;
     margin-right: 5px; }
 
   .book-a-table__date-input {
     width: 115px; }
+    .book-a-table__date-input:first-child {
+      margin-left: 0; }
 
   .container-with-sidebar {
     font-size: 0;
@@ -920,7 +934,7 @@
 
   .container-with-sidebar__main {
     display: inline-block;
-    width: 66.666%; }
+    width: 66.6%; }
 
   .container-with-sidebar__sidebar {
     display: inline-block;
@@ -1044,6 +1058,9 @@
     width: 34%;
     vertical-align: top;
     height: 725px; }
+    .opening-hours--bigger {
+      width: 33.4%;
+      height: 806px; }
 
   .photo__image {
     height: 650px;

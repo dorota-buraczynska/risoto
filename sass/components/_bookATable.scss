@@ -86,6 +86,7 @@
   }
 
 }
+
 @mixin book-a-table--sm() {
   .book-a-table__date-input {
     width: 115px;
@@ -103,12 +104,32 @@
 }
 
 @mixin book-a-table--lg() {
+  .book-a-table {
+    text-align: left;
+    margin-left: $common-padding * 6;
+  }
+
+  .book-a-table__button {
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .book-a-table__input {
+    width: 90.4%;
+  }
+
   .book-a-table__input--inline-block {
     display: inline-block;
-    width: 49.4%;
+    width: 45%;
     margin-right: $common-padding/4;
   }
+
   .book-a-table__date-input {
     width: 115px;
+
+    &:first-child {
+      margin-left: 0;
+    }
   }
 }
