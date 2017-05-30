@@ -1041,6 +1041,9 @@
   .nav__button {
     display: none; }
 
+  .nav__menu-link {
+    padding: 20px 10px; }
+
   .nav__menu-list {
     z-index: 7;
     display: inline-block;

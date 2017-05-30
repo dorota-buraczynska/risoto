@@ -107,6 +107,10 @@
     display: none;
   }
 
+  .nav__menu-link {
+    padding: $common-padding $common-padding/2;
+  }
+
   .nav__menu-list {
     @include z-index(header-items);
     display: inline-block;
